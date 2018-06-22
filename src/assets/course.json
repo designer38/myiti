@@ -1,0 +1,19 @@
+[
+    {
+        "offeredCourseId": 1,
+        "cost": 4400,
+        "description": "hggg vvvvhjj",
+        "durationHours": 12,
+        "endDate": "12-8-2018",
+        "imageUrl": "http://www.celebzz.com/wp-content/uploads/2018/01/penelope-cruz-elle-france-january-2018-4.jpg",
+        "startDate": "12-7-2018",
+        "name": "c++",
+        "noOfApplicant": 33,
+        "categoryId": {
+            "categoryId": 1,
+            "name": "programming",
+            "imageUrl": null
+		   }
+		   
+		}
+]

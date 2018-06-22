@@ -1,0 +1,55 @@
+nav{
+    background-color:rgba(255, 205, 0, .7);
+    .fory {
+        transform-style: preserve-3d;
+        transform:rotate(15deg);
+       transform-origin:center -20px;
+       float:left;
+       
+       margin-left: 10px;
+   }
+   .fory a {
+       border:5px solid;
+    border-color:white;
+       background-color: #439FDE;
+margin-left: 10px;
+       width:100px;
+   }
+   .fory:after{
+       content: '';
+       position: absolute;
+       width: 20px; height: 25px;
+       border: 1px solid rgb(155, 146, 146);
+       top: -10px; left: 50%;
+       z-index: -1;
+       border-bottom: none;
+       border-right: none;
+       transform: rotate(45deg);
+   }
+   /* nail */
+   .fory:before{
+       content: '';
+       position: absolute;
+       width: 5px; height: 5px;
+       top: -16px;left: 57%;
+       z-index: 5;
+       border-radius: 50% 50%;
+       background: #000;
+   }
+
+  
+
+
+    
+    a{
+        color:white;
+        
+        font-weight: 600;
+    }
+    a:focus {
+        
+       
+        transform:rotate(-15deg);
+    }
+   
+}

@@ -1,0 +1,58 @@
+<div class="row bg-warning fixed-top bt-5">
+    <div class="container">
+
+      
+       <!-- <a  class="btn btn-info" routerLink="/ShwReq">show Requests</a> -->
+      <div class="col-sm-12 offset-lg-9">
+   <!-- 	<a  class="btn btn-info" routerLink="/instructor">Back to Instructors</a>-->
+       </div><!-- column -->
+
+       
+      </div><!-- container -->
+    </div><!-- row button instruct rout -->
+   
+    <div class="container">
+
+
+        <div class="row h-100">
+            <div class="col-lg-6 mt-5">
+              <a class="btn btn-lg final ml-3 w-25"  routerLink="/instructor">Instructor</a>
+              <a class="btn btn-lg final ml-3 w-25"  routerLink="/WrkspcCrs">My requests</a>
+              <a class="btn btn-lg final ml-3 w-25" routerLink="/FormCourse">Add courses</a>
+            </div><!-- column -->
+          </div><!-- row -->
+      <div class="row table-bordered table-dark" *ngFor="let instruct of instructorAdmin">
+        <div class="col-lg-4 col-sm-12">
+
+            <div *ngFor="let videoinstruct of instruct.instructorVideosCollection">
+               <!-- <p><b>videoId:</b>{{videoinstruct.videoId}}</p> -->
+               <p>videoUrl1: {{videoinstruct.videoUrl}}</p>
+              </div>
+            <div *ngFor="let videourl of instruct.instructorUrlsCollection">
+                <!-- <p><b>video-Id:</b>{{videourl.urlId}}</p> -->
+                <p><b>video-url2:</b> {{videourl.urlValue}}</p>
+              </div>
+              <div *ngFor="let skillinstruct of instruct.skillsCollection">
+                  <!-- <p><b>videoId:</b>{{videoinstruct.videoId}}</p> -->
+                  <p>skills: {{skillinstruct.skillValue}}</p>
+                 </div>
+                 <div *ngFor="let imgurl of instruct.instructorImagesCollection">
+                    <!-- <p><b>video-Id:</b>{{videourl.urlId}}</p> -->
+                    <img src='{{imgurl.imageUrl}}'>
+                  </div>
+                 
+               <div *ngFor="let videourl of instruct.instructorUrlsCollection">
+                   <!-- <p><b>video-Id:</b>{{videourl.urlId}}</p> -->
+                   <p><b>video-url2:</b> {{videourl.urlValue}}</p>
+                 </div>
+            <!-- <div *ngFor="let category of instruct.categoryCollection">
+                 <p><b>video-Id:</b>{{category.categoryId}}</p> 
+                <p><b>catory-name:</b> {{category.name}}</p>
+                <p><b>category img-url:</b> {{category.imageUrl}}</p>
+              </div> -->
+              <button type="button" class="btn btn-info" routerLink='/AcceptShwReq' (click)="onload(instruct.userId)">accept</button>
+              <!-- <a [routerLink]="['/AdminInstructor', instruct.userId]"></a> -->
+            </div><!-- column 3 -->
+          </div>
+   </div><!-- container -->
+   

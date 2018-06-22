@@ -1,0 +1,68 @@
+
+<div class="container">
+  <div class="d-flex justify-content-center mt-3">
+         
+           <a class="btn btn-lg final"  routerLink="/CourseAdmin">Courses</a>
+           <a class="btn btn-lg final"  routerLink="/AdminInstructor">instructor</a>
+           <a class="btn btn-lg final"  routerLink="/WrkspaceAdmin">workspace</a>
+           <a  class="btn btn-lg final" routerLink="/SecApprove">second approve course</a>
+         
+         </div><!-- row -->
+
+      <div class="row table-bordered table-dark" *ngFor="let x of crsjson">
+         <div calss="col-lg-3 col-sm-12">
+            <p><b class="main">offeredCourseId:</b>{{x.offeredCourseId}}</p>
+            <p><b class="main">name:</b>{{x.name}}</p>
+            <p><b class="main">description:</b>{{x.description}}</p>
+            <p><b class="main">cost:</b>{{x.cost}}</p>
+            <p><b class="main">durationHours:</b>{{x.durationHours}}</p>
+            <p><b class="main">startDate:</b>{{x.startDate}}</p>
+            <p><b class="main">endDate:</b>{{x.endDate}}</p>
+            <img src="{{x.imageUrl}}"> 
+            <p><b>noOfApplicant:</b>{{x.noOfApplicant}}</p>
+         </div><!-- column -->
+
+         <div class="col-lg-3">
+          <p><b class="main">Name: </b>{{x.categoryId.name}}</p>
+          <img src={{x.categoryId.imageUrl}}>
+          <p><b class="main">userId:</b>{{x.instructorId.userId}}</p>
+          <p><b class="main"> totalRate:</b>{{x.instructorId. totalRate}}</p>
+          
+          <div *ngFor="let video of x.instructorId.instructorVideosCollection">
+            <p><b class="main">videoUrl: </b>{{video.videoUrl}}</p>
+          </div>
+
+          <div *ngFor="let skill of x.instructorId.skillsCollection">
+            <p><b class="main">skillValue: </b>{{skill.skillValue}}</p>
+          </div>
+
+          <div *ngFor="let img of x.instructorId.instructorImagesCollection">
+            <img ng-src="{img.imageUrl}}">
+
+          </div>
+
+          <div *ngFor="let imgUrl of x.instructorId.instructorUrlsCollection">
+            <p><b class="main">urlValue:</b>{{imgUrl.urlValue}}</p>
+          </div>
+        </div><!-- column -->
+
+          <div class="col-lg-3">
+            <!-- <p><b>workSpaceId:</b>{{x.hostingWorkSpaceId.workSpaceId}}</p> -->
+            <p><b>totalRate:</b>{{x.hostingWorkSpaceId.totalRate}}</p>
+            <img src="{{x.hostingWorkSpaceId.imageUrl}}">
+            <p><b class="main">city:</b>{{x.hostingWorkSpaceId.city}}</p>
+            <p><b class="main">address:</b>{{x.hostingWorkSpaceId.address}}</p>
+            <p><b class="main">name:</b>{{x.hostingWorkSpaceId.name}}</p>
+            <p><b class="main">startTime:</b>{{x.hostingWorkSpaceId.startTime}}</p>
+            <p><b class="main">closingTime:</b>{{x.hostingWorkSpaceId.closingTime}}</p>
+            <p><b class="main">"holiday:</b>{{x.hostingWorkSpaceId.holiday}}</p>
+            <p><b class="main">description:</b>{{x.hostingWorkSpaceId.description}}</p>
+            <p><b class="main">noOfRooms:</b>{{x.hostingWorkSpaceId.noOfRooms}}</p>
+            <p><b class="main">facebookPageUrl:</b>{{x.hostingWorkSpaceId.facebookPageUrl}}</p>
+            
+            <div class="col-lgl-3">
+            <button type="button" class="btn btn-info" (click)="onload(x.offeredCourseId)">accept</button>
+          </div>
+          </div><!-- column -->
+        </div><!-- row -->  
+</div><!-- container -->

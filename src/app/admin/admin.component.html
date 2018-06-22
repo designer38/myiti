@@ -1,0 +1,22 @@
+
+<canvas></canvas>
+
+<section class="genbg mt-4">
+    <div class="container">
+    <h1 class="">Login  as Admin</h1>
+		<form name="AdminForm" #AdminForm="ngForm" (ngSubmit)="getContact(AdminForm)" novalidate>
+			<div class="form-group">
+				<label>Admin name</label>
+				<input type="email" class="form-control" placeholder="Enter name"  name="email" #email="ngModel" [(ngModel)]="AdminForm.email" required>
+				<span class="text-danger" *ngIf="!email.valid && email.touched">Name is required</span>
+			  </div><!-- Workspace name -->
+			  
+			  <div class="form-group">
+				<label>Admin password</label>
+				<input type="password" class="form-control" placeholder="Enter name" name="password" #password="ngModel" [(ngModel)]="AdminForm.password" required>
+				<span class="text-danger" *ngIf="!password.valid && password.touched ">do not add less than 8 characters</span>
+			  </div><!-- Workspace password -->
+			  <button type="submit"  class="btn btn-lg final mt-5 mb-5">Submit</button>
+		</form>
+	 </div><!-- end of container -->
+</section>

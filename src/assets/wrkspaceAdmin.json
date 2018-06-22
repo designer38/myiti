@@ -1,0 +1,34 @@
+[
+    {
+        "workSpaceId": 2,
+        "totalRate": 5,
+        "imageUrl": null,
+        "city": "cairo",
+        "address": "23",
+        "latitude": null,
+        "longtitude": null,
+        "name": "elmorb3",
+        "startTime": "8:am",
+        "closingTime": "8:am",
+        "holiday": "monday",
+        "description": "7lwa 2wi",
+        "noOfRooms": 7,
+        "facebookPageUrl": null,
+        "workSpacePhonesCollection": [
+            {
+                "workSpacePhonesPK": {
+                    "workSpaceId": 2,
+                    "phone": "01255464"
+                }
+            }
+        ],
+        "workSpaceImagesCollection": [
+            {
+                "workSpaceImagesPK": {
+                    "workSpaceId": 2,
+                    "imageUrl": "https://i.ytimg.com/vi/AhS5IpQCGJ0/maxresdefault.jpg"
+                }
+            }
+        ]
+    }
+]

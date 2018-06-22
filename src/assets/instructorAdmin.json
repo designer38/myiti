@@ -1,0 +1,136 @@
+[
+    {
+        "userId": 2,
+        "firstName": "amy",
+        "lastName": "salib",
+        "userDob": "2017-4-7",
+        "email": "samy481@yahoo.com",
+        "gender": "m",
+        "imgUrl": "http://www.celebzz.com/wp-content/uploads/2018/01/penelope-cruz-elle-france-january-2018-4.jpg",
+        "following": false,
+        "instructor": {
+            "userId": 2,
+            "totalRate": 5,
+            "instructorVideosCollection": [
+                {
+                    "videoId": 1,
+                    "videoUrl": "https://www.youtube.com/watch?v=100rSnubqRs"
+                }
+            ],
+            "skillsCollection": [
+                {
+                    "skillId": 1,
+                    "skillValue": "developer"
+                }
+            ],
+            "instructorImagesCollection": [
+                {
+                    "imagesrc": "https://i.ytimg.com/vi/M8wBhKwgrVw/maxresdefault.jpg",
+                    "imgId": 1
+                }
+            ],
+            "instructorUrlsCollection": [
+                {
+                    "urlValue": "https://www.youtube.com/watch?v=US4v8_Mfgyo",
+                    "urlId": 1
+                }
+            ]
+        },
+        "followingNumber": 0,
+        "followersNumber": 0,
+        "categoryCollection": [
+            {
+                "categoryId": 1,
+                "name": "programming",
+                "imageUrl": null
+            },
+            {
+                "categoryId": 2,
+                "name": "dance",
+                "imageUrl": null
+            }
+        ]
+    },
+    {
+        "userId": 4,
+        "firstName": "lolo",
+        "lastName": "koko",
+        "userDob": "2017-7-8",
+        "email": "ssm481@yahoo.com",
+        "gender": "f",
+        "imgUrl": null,
+        "following": false,
+        "instructor": {
+            "userId": 4,
+            "totalRate": null,
+            "instructorVideosCollection": [
+                {
+                    "videoId": 2,
+                    "videoUrl": "https://www.youtube.com/watch?v=100rSnubqRs"
+                }
+            ],
+            "skillsCollection": [
+                {
+                    "skillId": 2,
+                    "skillValue": "frontend"
+                }
+            ],
+            "instructorImagesCollection": [
+                {
+                    "imageUrl": "https://i.ytimg.com/vi/3CXdwma1uuQ/maxresdefault.jpg",
+                    "imgId": 2
+                }
+            ],
+            "instructorUrlsCollection": [
+                {
+                    "urlValue": "https://www.youtube.com/watch?v=BFfOtbp-vd8",
+                    "urlId": 2
+                }
+            ]
+        },
+        "followingNumber": 0,
+        "followersNumber": 0,
+        "categoryCollection": []
+    },
+    {
+        "userId": 5,
+        "firstName": "fofo",
+        "lastName": "fofo",
+        "userDob": "2017-7-8",
+        "email": "ssm81@yahoo.com",
+        "gender": "f",
+        "imgUrl": null,
+        "following": false,
+        "instructor": {
+            "userId": 5,
+            "totalRate": null,
+            "instructorVideosCollection": [
+                {
+                    "videoId": 3,
+                    "videoUrl": "https://www.youtube.com/watch?v=100rSnubqRs"
+                }
+            ],
+            "skillsCollection": [
+                {
+                    "skillId": 3,
+                    "skillValue": "drawer"
+                }
+            ],
+            "instructorImagesCollection": [
+                {
+                    "imageUrl": "https://i.ytimg.com/vi/lRAEpae4OgY/maxresdefault.jpg",
+                    "imgId": 3
+                }
+            ],
+            "instructorUrlsCollection": [
+                {
+                    "urlValue": "https://www.youtube.com/watch?v=100rSnubqRs",
+                    "urlId": 3
+                }
+            ]
+        },
+        "followingNumber": 0,
+        "followersNumber": 0,
+        "categoryCollection": []
+    }
+]

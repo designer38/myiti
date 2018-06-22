@@ -1,0 +1,128 @@
+[
+    {
+    "offeredCourseId": 5,
+    "cost": 600,
+    "creator": 0,
+    "description": "problemsolving",
+    "durationHours": 60,
+    "endDate": "2018-05-08",
+    "imageUrl": null,
+    "name": "java",
+    "noOfApplicant": 70,
+    "startDate": "2018-09-08",
+    "categoryId": {
+        "categoryId": 1,
+        "name": "programming",
+        "imageUrl": null
+    },
+    "instructorId": {
+        "userId": 2,
+        "totalRate": 5,
+        "instructorVideosCollection": [
+            {
+                "videoId": 1,
+                "videoUrl": "https://www.youtube.com/watch?v=100rSnubqRs"
+            }
+        ],
+        "skillsCollection": [
+            {
+                "skillId": 1,
+                "skillValue": "depeloper"
+            }
+        ],
+        "instructorImagesCollection": [
+            {
+                "imageUrl": "https://i.ytimg.com/vi/M8wBhKwgrVw/maxresdefault.jpg",
+                "imgId": 1
+            }
+        ],
+        "instructorUrlsCollection": [
+            {
+                "urlValue": "https://www.youtube.com/watch?v=US4v8_Mfgyo",
+                "urlId": 1
+            }
+        ]
+    },
+    "hostingWorkSpaceId": {
+        "workSpaceId": 1,
+        "totalRate": 5,
+        "imageUrl": null,
+        "city": "alex",
+        "address": "256 st",
+        "latitude": null,
+        "longtitude": null,
+        "name": "myspaze",
+        "startTime": "50:pm",
+        "closingTime": "9:am",
+        "holiday": "friday",
+        "description": "workspace 7lwa",
+        "noOfRooms": 3,
+        "facebookPageUrl": null,
+        "workSpacePhonesCollection": [],
+        "workSpaceImagesCollection": []
+    }
+},
+{
+    "offeredCourseId": 3,
+    "cost": 600,
+    "creator": 0,
+    "description": "problemsolving",
+    "durationHours": 60,
+    "endDate": "2018-05-08",
+    "imageUrl": null,
+    "name": "java",
+    "noOfApplicant": 70,
+    "startDate": "2018-09-08",
+    "categoryId": {
+        "categoryId": 1,
+        "name": "programming",
+        "imageUrl": null
+    },
+    "instructorId": {
+        "userId": 2,
+        "totalRate": 5,
+        "instructorVideosCollection": [
+            {
+                "videoId": 1,
+                "videoUrl": "https://www.youtube.com/watch?v=100rSnubqRs"
+            }
+        ],
+        "skillsCollection": [
+            {
+                "skillId": 1,
+                "skillValue": "depeloper"
+            }
+        ],
+        "instructorImagesCollection": [
+            {
+                "imageUrl": "https://i.ytimg.com/vi/M8wBhKwgrVw/maxresdefault.jpg",
+                "imgId": 1
+            }
+        ],
+        "instructorUrlsCollection": [
+            {
+                "urlValue": "https://www.youtube.com/watch?v=US4v8_Mfgyo",
+                "urlId": 1
+            }
+        ]
+    },
+    "hostingWorkSpaceId": {
+        "workSpaceId": 1,
+        "totalRate": 5,
+        "imageUrl": null,
+        "city": "alex",
+        "address": "256 st",
+        "latitude": null,
+        "longtitude": null,
+        "name": "myspaze",
+        "startTime": "50:pm",
+        "closingTime": "9:am",
+        "holiday": "friday",
+        "description": "workspace 7lwa",
+        "noOfRooms": 3,
+        "facebookPageUrl": null,
+        "workSpacePhonesCollection": [],
+        "workSpaceImagesCollection": []
+    }
+}
+]

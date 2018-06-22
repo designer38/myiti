@@ -1,0 +1,128 @@
+<canvas></canvas>
+<section class="genbg mt-4">
+<div class="container">
+ <h1>Register as Workspace</h1>
+ <form name="signUp" #signUp="ngForm" novalidate>
+ 	
+  <div class="form-group">
+    <label>Workspace name</label>
+    <input type="text" class="form-control" placeholder="Enter name"  name="name" #name="ngModel" [(ngModel)]="WorkSpace.name" required>
+    <span class="text-danger" *ngIf="!name.valid && name.touched">Name is required</span>
+  </div><!-- Workspace name -->
+  
+   <div class="form-group">
+	<label>Email</label>
+	<input class="form-control" type="email" name="email" #email="ngModel" [(ngModel)]="WorkSpace.email" required> 
+	<span class="text-danger" *ngIf="!email.valid && email.touched">Email is required</span>
+	</div><!-- email -->
+	
+	<div class="form-group">
+		<label>Address</label>
+		<input class="form-control" type="text" name="address" #address="ngModel" [(ngModel)]="WorkSpace.address" required>
+		<span class="text-danger" *ngIf="!address.valid && address.touched"> address is required</span>
+		</div><!-- address -->
+  
+  <div class="form-group">
+    <label>Workspace password</label>
+    <input type="password" class="form-control" placeholder="Enter name" name="password" #password="ngModel" [(ngModel)]="WorkSpace.password" required>
+    <span class="text-danger" *ngIf="!password.valid && password.touched ">do not add less than 8 characters</span>
+  </div><!-- Workspace password -->
+  
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Description</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+    	type="time" name="description" #description="ngModel" [(ngModel)]="WorkSpace.description" required></textarea>
+		<span class="text-danger" *ngIf="!description.valid && description.touched ">please write description about your business</span>
+  </div><!-- Description -->
+  
+  <div class="row">
+   <div class="col-lg-6 col-sm-12">
+	  <div class="form-group">
+		  <label>Workspace open-time</label><br>
+		  <input class="form-control w-50" type="time" name="startTime" #startTime="ngModel" [(ngModel)]="WorkSpace.startTime" required>
+		  <span class="text-danger" *ngIf="!startTime.valid && startTime.touched ">please add workspace open-time</span>
+		</div><!-- open time -->
+    </div><!-- end of column -->
+    
+    <div class="col-lg-6 col-sm-12">
+	  <div class="form-group">
+		  <label>Workspace close-time</label><br>
+		  <input class="form-control w-50" type="time" name="closingTime" #closingTime="ngModel" [(ngModel)]="WorkSpace.closingTime" required>
+		  <span class="text-danger" *ngIf="!closingTime.valid && closingTime.touched ">please add workspace close-time</span>
+		</div><!-- open time -->
+	 </div><!-- end of column -->
+	</div><!-- end of row time -->
+	
+   <!-- <div class="form-group">
+    <label for="exampleFormControlFile1">Add picture for workspace</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="fileupload" #fileupload="ngModel" [(ngModel)]="WorkSpace.fileupload">
+    <span class="text-danger" *ngIf="!fileupload.valid && fileupload.touched ">please upload image</span>
+	</div>add picture for workspace -->
+  
+  <div class="form-group">
+   <label>Holidays</label><br>
+	  <div class="form-check form-check-inline" >
+		  <input class="form-check-input" type="checkbox" value="Saturday" name="holiday" #holiday="ngModel" [(ngModel)]="WorkSpace.holiday">
+		  <label class="form-check-label" for="inlineCheckbox1">Saturday</label>
+	  </div>
+	  <div class="form-check form-check-inline">
+		  <input class="form-check-input" type="checkbox" value="Sunday" name="holiday1" #holiday1="ngModel" [(ngModel)]="WorkSpace.holiday1">
+		  <label class="form-check-label" for="inlineCheckbox2">Sunday</label>
+	  </div>
+	  <div class="form-check form-check-inline">
+		  <input class="form-check-input" type="checkbox" value="Monday" name="holiday2" #holiday2="ngModel" [(ngModel)]="WorkSpace.holiday2">
+		  <label class="form-check-label" for="inlineCheckbox2">Monday</label>
+	  </div>
+	  <div class="form-check form-check-inline">
+		  <input class="form-check-input" type="checkbox" value="tuesday" name="holiday3" #holiday3="ngModel" [(ngModel)]="WorkSpace.holiday3">
+		  <label class="form-check-label" for="inlineCheckbox2">Tuesday</label>
+	  </div>
+	  <div class="form-check form-check-inline">
+		  <input class="form-check-input" type="checkbox" value="Wedneasday" name="holiday4" #holiday4="ngModel" [(ngModel)]="WorkSpace.holiday5">
+		  <label class="form-check-label" for="inlineCheckbox2">Wedneasday</label>
+	  </div>
+	  <div class="form-check form-check-inline">
+		  <input class="form-check-input" type="checkbox" value="Thursday" name="holiday5" #holiday5="ngModel" [(ngModel)]="WorkSpace.holiday5">
+		  <label class="form-check-label" for="inlineCheckbox2">Thursday</label>
+	  </div>
+	  <div class="form-check form-check-inline">
+		  <input class="form-check-input" type="checkbox" value="Friday" name="holiday6" #holiday6="ngModel" [(ngModel)]="WorkSpace.holiday6">
+		  <label class="form-check-label" for="inlineCheckbox2">Friday</label>
+	 </div>
+	 </div> <!-- weekend holidays -->
+	 
+  <!-- <div class="form-group">
+	<label>Telephone</label>
+	<input class="form-control" type="number" name="workSpacePhonesCollection" 
+	#workSpacePhonesCollection="ngModel" [(ngModel)]="WorkSpace.workSpacePhonesCollection" required> 
+	<span class="text-danger" *ngIf="!workSpacePhonesCollection.valid && workSpacePhonesCollection.touched ">please add phone number</span>
+  </div>telephone -->
+  
+    <div class="form-group" >
+	   <label>How many Rooms in Workspace</label>
+	   <input class="form-control" type="number" name="noOfRooms" #noOfRooms="ngModel" [(ngModel)]="WorkSpace.noOfRooms" required> 
+		 <span class="text-danger" *ngIf="!noOfRooms.valid && noOfRooms.touched ">please add room number</span>
+		</div><!-- room no -->
+  
+  <div class="form-group">
+  	<label>Facebook URL</label>
+  	<input class="form-control" ngModelGroup="room" #room="ngModelGroup" type="url" id="myURL" value="facebook" name="facebookPageUrl" #facebookPageUrl="ngModel" [(ngModel)]="WorkSpace.facebookPageUrl" required> 
+	  <span class="text-danger" *ngIf="!facebookPageUrl.valid && facebookPageUrl.touched ">please enter url facebook </span>
+  </div><!-- URL facebook -->
+  
+  <label for="exampleFormControlSelect1">Workspace City</label>
+  <select class="form-control w-50" name="fields[country]" id="country" name="city" #city="ngModel" [(ngModel)]="WorkSpace.city" >
+	   <option value="Alexandria">Alexandria</option>
+	   <option value="Cairo">Cairo</option>
+	   <option value="Giza">Giza</option>
+	   <option value="Damanhur">Damanhur</option>
+	   <option value="Zagazig">Zagazig</option>
+	   <option value="Mansoura">Mansoura</option>
+	   <option value="Sharkia">Sharkia</option>
+	</select><!-- countries -->
+	<span class="text-danger" *ngIf="!city.valid && city.touched ">please add phone number</span>
+	
+	</form>	
+		<a type="button" class="btn btn-lg final mt-5 mb-5" (click)="onSave($event)" routerLink="/SignIn">Submit</a>
+		</div><!-- container -->
+</section>

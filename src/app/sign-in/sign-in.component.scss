@@ -1,0 +1,51 @@
+input.ng-invalid.ng-touched{
+	border:1px solid red;
+}
+
+html {
+    overflow-y: scroll; /* Remove This Line */
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+  margin:0;
+  overflow-y: auto;
+   overflow-x: hidden;
+  }
+  canvas{
+	  background-image: url("../../assets/imgs/bricks-brickwall-brickwork-1092364.jpg");
+	  background-size: cover;
+	  background-repeat: no-repeat;
+  border:1px solid black;
+ position:fixed;
+ top:0;
+ bottom:0;
+ z-index:-1;
+
+}
+.genbg{
+	color:white;
+	font-family: "roboto";
+	font-weight: 900;
+	width:600px;
+	background-color: rgba(29, 88, 117, .8);
+	margin-left: 400px;
+	padding:40px;
+	margin-bottom: 20px;
+
+}
+.final{
+	background-color: #FFCD00;
+	width:200px;
+	margin-left: 130px;
+	color:#1D5875;
+	border-radius: 0%;
+}
+.final:hover{
+	color:white;
+	background-color: #439FDE;
+	width:200px;
+	margin-left: 130px;
+	color:white;
+	border-radius: 0%;
+}

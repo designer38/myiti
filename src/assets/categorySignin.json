@@ -1,0 +1,12 @@
+[
+    {
+        "categoryId": 1,
+        "name": "php"
+        
+    },
+    {
+        "categoryId": 2,
+        "name": "c++"
+      
+    }
+]

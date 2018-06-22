@@ -1,0 +1,55 @@
+<div class="container">
+     <div class="d-flex justify-content-center mt-3">
+            
+              <a class="nav-item nav-link btn btn-lg final" routerLink="/CourseAdmin">Courses</a>
+              <a class="nav-item nav-link btn btn-lg final" routerLink="/AdminInstructor">instructor</a>
+              <a class="nav-item nav-link btn btn-lg final" routerLink="/WrkspaceAdmin">workspace</a>
+              <a class="nav-item nav-link btn btn-lg final" routerLink="/SecApprove">SecApprove</a>
+            
+
+      </div><!-- link rows -->
+    <div class="row mb-5 mt-3 table-bordered table-dark"  *ngFor="let instruct of instructorAdmin">
+        <div class="col-lg-4 col-sm-12">
+            <!-- <p class="mt-0"><b>userId:</b> {{instruct.userId}}</p> -->
+            <p><b class="main">firstName:</b> {{instruct.firstName}}</p>
+            <p><b class="main">lastName: </b> {{instruct.lastName}}</p>
+            <p><b class="main">userDob: </b>{{instruct.userDob}}</p>
+            <p><b class="main">email: </b>{{instruct.email}}</p>
+            <p><b class="main">gender:</b> {{instruct.gender}}</p>
+           
+     
+              <div *ngFor="let skillsstruct of instruct.instructor.skillsCollection">
+               <!-- <p><b>skill-Id:</b>{{skillsstruct.skillId}}</p> -->
+               <p><b class="main">skill-Value: </b>{{skillsstruct.skillValue}}</p>
+             </div>
+        </div><!-- column 1 -->
+
+        <div class="col-lg-4 col-sm-12">
+            <img src="{{instruct.imgUrl}}" alt="Generic placeholder image">
+            <div *ngFor="let instImg of instruct.instructor.instructorImagesCollection">
+                <!-- <p><b>iMage-Id:</b>{{instImg.imgId}}</p> -->
+                <img src="{{instImg.imagesrc}}">
+              </div>
+
+        </div><!-- column 2 -->
+
+        <div class="col-lg-4 col-sm-12">
+              <div *ngFor="let videoinstruct of instruct.instructor.instructorVideosCollection">
+                 <!-- <p><b>videoId:</b>{{videoinstruct.videoId}}</p> -->
+                 <p class="main">videoUrl1: {{videoinstruct.videoUrl}}</p>
+                </div>
+              <div *ngFor="let videourl of instruct.instructor.instructorUrlsCollection">
+                  <!-- <p><b>video-Id:</b>{{videourl.urlId}}</p> -->
+                  <p><b class="main">video-url2:</b> {{videourl.urlValue}}</p>
+                </div>
+              <div *ngFor="let category of instruct.categoryCollection">
+                  <!-- <p><b>video-Id:</b>{{category.categoryId}}</p> -->
+                  <p><b class="main">catory-name:</b> {{category.name}}</p>
+                  <p><b class="main">category img-url:</b> {{category.imageUrl}}</p>
+                </div>
+                <button type="button" class="btn btn-info" (click)="onload(instruct.userId)">accept</button>
+                <a [routerLink]="['/AdminInstructor', instruct.userId]"></a>
+              </div><!-- column 3 -->
+</div><!-- container -->
+
+
