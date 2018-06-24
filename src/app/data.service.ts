@@ -20,6 +20,10 @@ export class DataService {
 	getData(path: string,httpOption): Observable<any> {
      return this.http.put(path,httpOption);
   }//signin
+  
+  getMyData(path: string,header): Observable<any> {
+    return this.http.get(path,header);
+  }//get upcoming courses
 	
 	postAdmin(path:string, data) : Observable<any>{
     return this.http.put(path,data);
