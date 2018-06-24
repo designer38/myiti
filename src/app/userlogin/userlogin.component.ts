@@ -26,7 +26,6 @@ export class UserloginComponent implements OnInit {
 
   getworkspace(httpOption: NgForm): void{
 		console.log(httpOption.value)
-		let header = new HttpHeaders();
 		let DeviceToken ="null";
 		let path:string='https://tal-company.herokuapp.com/users/login/web'
 		this.Data.postDataHeader(path,httpOption.value,
