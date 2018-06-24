@@ -34,6 +34,7 @@ import { AcceptShwReqComponent } from './accept-shw-req/accept-shw-req.component
 import { DataService } from './data.service';
 import { TransferService } from './transfer.service';
 import { CategoryService } from './category.service';
+import { UserloginComponent } from './userlogin/userlogin.component';
 
 
 
@@ -55,7 +56,8 @@ const routes: Routes = [
 	{ path:'CourseAdmin', component: CourseAdminComponent },
 	{ path:'SecApprove', component: SecApproveComponent },
 	{ path:'ShwReq', component: ShwReqComponent },
-	{ path:'AcceptShwReq', component: AcceptShwReqComponent }
+	{ path:'AcceptShwReq', component: AcceptShwReqComponent },
+	{ path:'userLogin', component: UserloginComponent }
 	
 ]
 
@@ -82,7 +84,8 @@ const routes: Routes = [
 	CourseAdminComponent,
 	SecApproveComponent,
 	ShwReqComponent,
-	AcceptShwReqComponent
+	AcceptShwReqComponent,
+	UserloginComponent
   ],
   imports: [
     BrowserModule,

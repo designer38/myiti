@@ -3,8 +3,6 @@ import { NgForm, NgModel } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { DataService } from '../data.service';
 import {Router} from '@angular/router';
-import {  HttpHeaders } from '@angular/common/http';
-
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
@@ -12,32 +10,23 @@ import {  HttpHeaders } from '@angular/common/http';
 })
 export class SignInComponent implements OnInit {
 getData: Array<object>;
-userLogin: object;
-DeviceToken: string;
+	
   constructor(private Data: DataService,
 				private http:HttpClient,
 				private router: Router) 
 	{
-	this.getData=[{}];
-	// this.DeviceToken= 'null';
-	this.userLogin = {
-		"email": "",
-		"password": ""
-	}	
+  this.getData=[{}];
   }
+
+	
   getworkspace(httpOption: NgForm): void{
-		console.log(httpOption.value)
-		let header = new HttpHeaders();
-		let DeviceToken ="null";
-		let path:string='https://tal-company.herokuapp.com/users/login'
-		this.Data.postDataHeader(path,httpOption.value,
-			{headers : new HttpHeaders({'Device-Token':`Bearer ${DeviceToken}`})}
-		).subscribe(
+		
+	let path:string='http://172.16.5.177:3000/workspace/login'
+	this.Data.postAdmin(path,httpOption.value).subscribe(
 		res=>{
-			// this.getData =res;
-			let token = res.RequestMessage.Headers.GetValues('Token').FirstOrDefault()
-			console.log(res.headers.get('Token'));
-			// localStorage.setItem('token',);
+			this.getData =res;
+			console.log(res);
+			localStorage.setItem('workSpaceId', res.workSpaceId);
 			this.router.navigate(['/WrkspcCrs'])
 		},
 		err=>{
