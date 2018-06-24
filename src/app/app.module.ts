@@ -89,7 +89,7 @@ const routes: Routes = [
 	ShwReqComponent,
 	AcceptShwReqComponent,
 	UpcomingCoursesComponent,
-	UserloginComponent
+
   ],
   imports: [
     BrowserModule,
