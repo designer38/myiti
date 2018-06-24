@@ -15,9 +15,9 @@ export class UpcomingCoursesComponent implements OnInit {
   constructor(private q: DataService) { 
     this.getCourses();
     this.token = localStorage.getItem('token');
-     
-
-
+    console.log(this.token);
+   
+  
   }
 
    // function to get courses

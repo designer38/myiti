@@ -36,6 +36,7 @@ import { UpcomingCoursesComponent } from './upcoming-courses/upcoming-courses.co
 import { DataService } from './data.service';
 import { TransferService } from './transfer.service';
 import { CategoryService } from './category.service';
+import { UserloginComponent } from './userlogin/userlogin.component';
 
 
 
@@ -58,7 +59,11 @@ const routes: Routes = [
 	{ path:'SecApprove', component: SecApproveComponent },
 	{ path:'ShwReq', component: ShwReqComponent },
 	{ path:'AcceptShwReq', component: AcceptShwReqComponent },
+<<<<<<< HEAD
 	{ path:'upcomingCourses', component: UpcomingCoursesComponent }
+=======
+	{ path:'userLogin', component: UserloginComponent }
+>>>>>>> a22de875035a7c68fb25dfd70855bc34bdd88086
 	
 ]
 
@@ -86,7 +91,11 @@ const routes: Routes = [
 	SecApproveComponent,
 	ShwReqComponent,
 	AcceptShwReqComponent,
+<<<<<<< HEAD
 	UpcomingCoursesComponent
+=======
+	UserloginComponent
+>>>>>>> a22de875035a7c68fb25dfd70855bc34bdd88086
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,81 @@
+1-User login :
+
+Link : https://tal-company.herokuapp.com/users/login
+method :post 
+------------------------------------------------------------------------------------------------------------
+note :send in header key called :Device-Token and it’s value is null (ektbo fy el value klmt null).
+Shakl el Jason elly el mafrod ygyly :
+ {
+	"email":"samy481@yahoo.com",
+	"password":"5678"
+	
+}
+-----------------------------------------------------------------------------------------------------------
+El response :
+1- El status code elly rag3 hwa 202
+2- hyb2a fy token fy el header el key bta3to esmha (token) dah t5znoh 3shan el secutiry
+3- w dah shakl el Jason elly rag3 :
+{
+    "userId": 2,
+    "firstName": "amy",
+    "lastName": "salib",
+    "userDob": "2017-4-7",
+    "email": "samy481@yahoo.com",
+    "gender": "m",
+    "imgUrl": "http://www.celebzz.com/wp-content/uploads/2018/01/penelope-cruz-elle-france-january-2018-4.jpg",
+    "userType": 2,
+    "instructor": {
+        "userId": 2,
+        "totalRate": 2.724853515625,
+        "instructorVideosCollection": [
+            {
+                "videoId": 1,
+                "videoUrl": "https://www.youtube.com/watch?v=100rSnubqRs"
+            }
+        ],
+        "skillsCollection": [
+            {
+                "skillId": 1,
+                "skillValue": "depeloper"
+            }
+        ],
+        "instructorImagesCollection": [
+            {
+                "imageUrl": "https://i.ytimg.com/vi/M8wBhKwgrVw/maxresdefault.jpg",
+                "imgId": 1
+            }
+        ],
+        "instructorUrlsCollection": [
+            {
+                "urlValue": "https://www.youtube.com/watch?v=US4v8_Mfgyo",
+                "urlId": 1
+            }
+        ]
+    },
+    "followingNumber": 0,
+    "followersNumber": 0,
+    "phone": "01244778",
+    "categoryCollection": [
+        {
+            "categoryId": 1,
+            "name": "Photography",
+            "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fphotography.png?alt=media&token=58cea8a4-c17a-4aa6-8bad-942ebd2cc6b3"
+        },
+        {
+            "categoryId": 2,
+            "name": "Programming",
+            "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fprogramming.png?alt=media&token=2ee45036-a5e6-488c-bd76-a4e1d6a20c04"
+        }
+    ],
+    "password": "5678",
+    "fbToken": null,
+    "fbId": null,
+    "twitterToken": null,
+    "twitterId": null,
+    "googleToken": null,
+    "googleId": null,
+    "city": "Cairo",
+    "points": 30,
+    "following": false
+}
+
