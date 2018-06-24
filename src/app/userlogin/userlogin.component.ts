@@ -38,7 +38,7 @@ export class UserloginComponent implements OnInit {
 			localStorage.setItem('token',res.userTok);
 			localStorage.setItem('userId',res.userId);
 			localStorage.setItem('userType',res.userType);
-			this.router.navigate(['/WrkspcCrs'])
+			this.router.navigate(['/upcomingCourses'])
 		},
 		err=>{
 			console.log(err);
