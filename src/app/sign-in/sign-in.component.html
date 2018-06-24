@@ -7,13 +7,17 @@
 		<form name="SignIn" #SignIn="ngForm" (ngSubmit)="getworkspace(SignIn)" novalidate>
 			<div class="form-group">
 				<label>Workspace email</label>
-				<input type="email" class="form-control" placeholder="Enter name"  name="email" #email="ngModel" [(ngModel)]="SignIn.email" required>
+				<input type="email" class="form-control" 
+				placeholder="Enter name"  
+				name="email" #email="ngModel" [(ngModel)]="userLogin.email" required>
 				<span class="text-danger" *ngIf="!email.valid && email.touched">Name is required</span>
 			  </div><!-- Workspace name -->
 			  
 			  <div class="form-group">
 				<label>Workspace password</label>
-				<input type="password" class="form-control" placeholder="Enter Password" name="password" #password="ngModel" [(ngModel)]="SignIn.password" required>
+				<input type="password" class="form-control" 
+				placeholder="Enter Password" name="password" #password="ngModel" 
+				[(ngModel)]="userLogin.password" required>
 				<span class="text-danger" *ngIf="!password.valid && password.touched ">do not add less than 8 characters</span>
 			  </div><!-- Workspace password -->
 			  <button type="submit"  class="btn btn-lg final mt-5 mb-5">Login</button>

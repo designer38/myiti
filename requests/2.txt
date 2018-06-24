@@ -1,0 +1,105 @@
+User can view upcoming courses (mmkn t3mloha zy grid view 2w 2y 7aga zy el mwake3 bta3yt el coursat )
+W tbyno byanat mo3ya z esm el course w hybd2 emta w esm el instructor w 3dd el likes  w hkza wlma el user ydos 3lyh yft7 kol details el course w y2dr y3ml like 2w comment w y3ml register fyh 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  El request : https://tal-company.herokuapp.com/publishedCourses/upComing?userId=2&page=0
+Method :get
+Mtnsosh tb3to el token 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Response :
+Dy list of courses msh course wa7yd 3shan matt5dosh
+
+{
+    "pageNumber": 0,
+    "totalNumberOfUpComingCourses": 3,
+    "totalNumberOfPages": 1,
+    "result": [
+        {
+            "offeredCourseId": 3,
+            "name": "Algorithms",
+            "durationHours": 60,
+            "startDate": "2018-09-08",
+            "endDate": "2018-10-08",
+            "description": "Learn how to solve big problem",
+            "noOfApplicant": 70,
+            "cost": 600,
+            "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fprogramming.png?alt=media&token=2ee45036-a5e6-488c-bd76-a4e1d6a20c04",
+            "categoryName": "Programming",
+            "workSpaceName": "MySpace",
+            "idOfInstructor": 2,
+            "idOfWorkSpace": 1,
+            "numberOfLikes": 6,
+            "numberOfComments": 2,
+            "liked": false,
+            "registered": false,
+            "rated": false,
+            "courseStatus": 0,
+            "nameOfInstructor": "amy salib",
+            "courseComments": [
+                {
+                    "userIdOfComment": 42,
+                    "comment": "good course",
+                    "time": "2018-06-19 09:33 PM",
+                    "userNameOfcomment": "Mina Yousry samir",
+                    "userImageOfComment": "http://graph.facebook.com/10211820987105414/picture?type=large"
+                },
+                {
+                    "userIdOfComment": 46,
+                    "comment": "????",
+                    "time": "2018-06-20 10:48 AM",
+                    "userNameOfcomment": "lala nana",
+                    "userImageOfComment": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/image%2Ffc4831e5-9fa6-4d9e-9401-d66170d6ae3e?alt=media&token=50276624-2b47-4f06-80bc-7a4fa8284ee1"
+                }
+            ],
+            "publishedDate": "2018-01-01"
+        },
+        {
+            "offeredCourseId": 8,
+            "name": "Soft Skills",
+            "durationHours": 60,
+            "startDate": "2018-09-08",
+            "endDate": "2018-10-08",
+            "description": "Come and join us in soft skills course",
+            "noOfApplicant": 70,
+            "cost": 600,
+            "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fhr.png?alt=media&token=9ccb39e3-59c4-4f5e-96f5-19c129ab37b4",
+            "categoryName": "Hr",
+            "workSpaceName": "ELmorab3",
+            "idOfInstructor": 2,
+            "idOfWorkSpace": 2,
+            "numberOfLikes": 2,
+            "numberOfComments": 0,
+            "liked": false,
+            "registered": false,
+            "rated": false,
+            "courseStatus": 0,
+            "nameOfInstructor": "amy salib",
+            "courseComments": [],
+            "publishedDate": "2018-01-01"
+        },
+        {
+            "offeredCourseId": 13,
+            "name": "Spring",
+            "durationHours": 60,
+            "startDate": "2018-09-08",
+            "endDate": "2019-10-08",
+            "description": "Spring is very huge frame work",
+            "noOfApplicant": 70,
+            "cost": 600,
+            "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fprogramming.png?alt=media&token=2ee45036-a5e6-488c-bd76-a4e1d6a20c04",
+            "categoryName": "Programming",
+            "workSpaceName": "MySpace",
+            "idOfInstructor": 42,
+            "idOfWorkSpace": 1,
+            "numberOfLikes": 0,
+            "numberOfComments": 0,
+            "liked": false,
+            "registered": false,
+            "rated": false,
+            "courseStatus": 0,
+            "nameOfInstructor": "Mina Yousry samir",
+            "courseComments": [],
+            "publishedDate": "2018-06-19"
+        }
+    ]
+}
+
