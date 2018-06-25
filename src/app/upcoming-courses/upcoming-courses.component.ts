@@ -23,8 +23,7 @@ export class UpcomingCoursesComponent implements OnInit {
    // function to get courses
    getCourses() {
     let token: string = localStorage.getItem('token');
-    let path: string = 
-    'https://tal-company.herokuapp.com/publishedCourses/upComing?userId=2&page=0'
+    let path: string = 'https://tal-company.herokuapp.com/publishedCourses/upComing?userId=2&page=0'
     console.log(token)
     if(token)
     {

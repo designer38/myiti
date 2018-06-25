@@ -1,15 +1,28 @@
+
+
+
+
 <div class="container">
     <div class="row mt-5">
-      <div class="col-md-4" *ngFor="let course of courses">
-        <div class="card mb-2 text-center">
-          <img class="card-img-top m-auto p-2" src="{{course.imageUrl}}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">{{course.name}}</h5>
-            <p class="card-text"> by {{course.nameOfInstructor}}</p>
-            <p class="card-text">Start date: {{course.startDate}}</p>
-            <span>{{course.numberOfLikes}}</span> &nbsp;  <span>{{course.numberOfComments}}</span>
-          </div>
+        <div class="col-md-4" *ngFor="let course of courses">
+    <div class="card mb-2 text-center">
+      <img class="card-img-top m-auto p-2" src="{{course.imageUrl}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{course.name}}</h5>
+         <div class="row central">
+            <p >By:</p>
+        <p class="text-primary">{{course.nameOfInstructor}}</p>
+         </div>
+         <div class="row central2">
+            <p >Start date:</p>
+        <p class="text-danger">{{course.startDate}}</p>
+         </div>
+         <div class="row central3">
+              <i class="fas fa-thumbs-up"></i>
+        <p>{{course.numberOfLikes}}</p> &nbsp;  <i class="fas fa-comments"></i> <p>{{course.numberOfComments}}</p>
+         </div>
         </div>
-      </div>
     </div>
-  </div>
+    </div>
+</div>
+</div>

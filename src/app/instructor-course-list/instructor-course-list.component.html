@@ -1,13 +1,13 @@
 <div class="container">
   <div class="row mt-5">
     <div class="col-md-4" *ngFor="let course of coursesList">
-      <div class="card mb-2 text-center">
+      <div class="card shadow mb-2 text-center">
         <img class="card-img-top m-auto p-2" src="{{course.imageUrl}}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{course.name}}</h5>
           <p class="card-text">{{course.description}}</p>
-          <p class="card-text">cost: {{course.cost}}</p>
-          <p class="card-text">duration: {{course.durationHours}}</p>
+          <p class="card-text text-primary">cost: {{course.cost}}</p>
+          <p class="card-text text-danger">duration: {{course.durationHours}}</p>
           <a routerLink="/reqWorkspaces" class="btn btn-primary">show requests</a>
         </div>
       </div>
