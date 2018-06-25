@@ -60,8 +60,7 @@ const routes: Routes = [
 	{ path:'SecApprove', component: SecApproveComponent },
 	{ path:'ShwReq', component: ShwReqComponent },
 	{ path:'AcceptShwReq', component: AcceptShwReqComponent },
-	{ path:'upcomingCourses', component: UpcomingCoursesComponent },
-	{ path:'userLogin', component: UserloginComponent }
+	{ path:'upcomingCourses', component: UpcomingCoursesComponent }
 	
 ]
 
