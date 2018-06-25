@@ -46,7 +46,7 @@ formData: object;
 		this.dx=dx;
 		this.dy=dy;
 		this.radius=radius;
-		this.colors=['#FFCD00','#3F708D','#439FDE','#F88756'];
+		this.colors=['#FFCD00','#3F708D','#439FDE'];
 		this.color=colors[Math.floor(Math.random() * colors.length)];
 		this.draw=function(){
 		  c.beginPath();
@@ -80,10 +80,10 @@ formData: object;
 	  for(var i=0;i<100;i++){
 		var x= Math.random()*(innerWidth-(radius*2))+radius;
 		var y= Math.random()*(innerHeight-(radius*2))+radius;
-		var dx=(Math.random()-0.2)*10;
-		var dy=(Math.random()-0.2)*10;
+		var dx=(Math.random()-0.2)*3;
+		var dy=(Math.random()-0.2)*3;
 		var radius=30;
-		var colors=['#FFCD00','#3F708D','#439FDE','#F88756'];
+		var colors=['#FFCD00','#3F708D','#439FDE'];
 		var color=colors[Math.floor(Math.random() * colors.length)];
 		circleArray.push(new circle(x,y,dx,dy,radius,color));
 
