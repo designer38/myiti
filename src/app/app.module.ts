@@ -67,7 +67,10 @@ const routes: Routes = [
 	{ path:'userLogin', component: UserloginComponent },
 	{ path:'createCourseByInstructor', component: CreateCourseByInstrutorComponent},
 	{ path:'myCoursesList', component: InstructorCourseListComponent},
-	{ path:'reqWorkspaces', component: ReqWorkspacesComponent}
+	{ path:'reqWorkspaces', component: ReqWorkspacesComponent},
+	{ path:'registeredCourses', component:  RegisteredCoursesComponent},
+
+
 	
 ]
 
@@ -111,7 +114,9 @@ const routes: Routes = [
 	FormsModule,
 	NgbModule.forRoot(),
 	ImageUploadModule.forRoot(),
-	AngularWebStorageModule
+	AngularWebStorageModule,
+	
+
   ],
   providers: [DataService, TransferService, CategoryService],
   bootstrap: [AppComponent]
