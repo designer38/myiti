@@ -37,6 +37,7 @@ import { DataService } from './data.service';
 import { TransferService } from './transfer.service';
 import { CategoryService } from './category.service';
 import { UserloginComponent } from './userlogin/userlogin.component';
+import { RegisteredCoursesComponent } from './registered-courses/registered-courses.component';
 
 
 
@@ -89,6 +90,8 @@ const routes: Routes = [
 	ShwReqComponent,
 	AcceptShwReqComponent,
 	UpcomingCoursesComponent,
+	UserloginComponent,
+	RegisteredCoursesComponent
 
   ],
   imports: [
