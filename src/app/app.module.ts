@@ -37,6 +37,8 @@ import { DataService } from './data.service';
 import { TransferService } from './transfer.service';
 import { CategoryService } from './category.service';
 import { UserloginComponent } from './userlogin/userlogin.component';
+import { CreateCourseByInstrutorComponent } from './create-course-by-instrutor/create-course-by-instrutor.component';
+import { InstructorCourseListComponent } from './instructor-course-list/instructor-course-list.component';
 
 
 
@@ -60,7 +62,9 @@ const routes: Routes = [
 	{ path:'ShwReq', component: ShwReqComponent },
 	{ path:'AcceptShwReq', component: AcceptShwReqComponent },
 	{ path:'upcomingCourses', component: UpcomingCoursesComponent },
-	{ path:'userLogin', component: UserloginComponent }
+	{ path:'userLogin', component: UserloginComponent },
+	{ path:'createCourseByInstructor', component: CreateCourseByInstrutorComponent},
+	{ path:'myCoursesList', component: InstructorCourseListComponent}
 	
 ]
 
@@ -89,6 +93,9 @@ const routes: Routes = [
 	ShwReqComponent,
 	AcceptShwReqComponent,
 	UpcomingCoursesComponent,
+	UserloginComponent,
+	CreateCourseByInstrutorComponent,
+	InstructorCourseListComponent
 
   ],
   imports: [

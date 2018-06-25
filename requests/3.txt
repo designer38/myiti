@@ -1,0 +1,104 @@
+Create course by instructor :
+
+
+
+El 2wl ht7tago t2ro el categories kolha :
+
+El link :
+https://tal-company.herokuapp.com/categories
+
+shakl el response : 
+
+
+[
+    {
+        "categoryId": 1,
+        "name": "Photography",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fphotography.png?alt=media&token=58cea8a4-c17a-4aa6-8bad-942ebd2cc6b3"
+    },
+    {
+        "categoryId": 2,
+        "name": "Programming",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fprogramming.png?alt=media&token=2ee45036-a5e6-488c-bd76-a4e1d6a20c04"
+    },
+    {
+        "categoryId": 3,
+        "name": "Cooking",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fcooking.png?alt=media&token=4e8b9fdd-24fa-4095-9662-acee2bf74637"
+    },
+    {
+        "categoryId": 4,
+        "name": "Crochet",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fcrochet.png?alt=media&token=09a3f72b-1e8c-4e3a-912f-699049be0d65"
+    },
+    {
+        "categoryId": 5,
+        "name": "Fashion",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Ffashion.png?alt=media&token=35240efd-2ea3-44bd-ab3c-3cd9dd1035f5"
+    },
+    {
+        "categoryId": 6,
+        "name": "Embrodeiry",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fcrochet.png?alt=media&token=09a3f72b-1e8c-4e3a-912f-699049be0d65"
+    },
+    {
+        "categoryId": 7,
+        "name": "Hr",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fhr.png?alt=media&token=9ccb39e3-59c4-4f5e-96f5-19c129ab37b4"
+    },
+    {
+        "categoryId": 8,
+        "name": "Knitting",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fcrochet.png?alt=media&token=09a3f72b-1e8c-4e3a-912f-699049be0d65"
+    },
+    {
+        "categoryId": 9,
+        "name": "Language",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Flang.png?alt=media&token=1b2676c7-99a2-4faa-a6f1-267569c881f2"
+    },
+    {
+        "categoryId": 10,
+        "name": "Music",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fmusic.png?alt=media&token=96cc8b41-b20a-4416-8a75-76ac59b6654a"
+    },
+    {
+        "categoryId": 11,
+        "name": "Nasij",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Flang.png?alt=media&token=1b2676c7-99a2-4faa-a6f1-267569c881f2"
+    },
+    {
+        "categoryId": 12,
+        "name": "Painting",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fpainting.png?alt=media&token=972d82dd-ed39-4449-9738-01dc4491e02e"
+    }
+]
+
+
+
+Link: https://tal-company.herokuapp.com/offeredcourse/createofferedcoursebyinstructor
+
+Method :post
+
+Shakl el request :
+
+{
+"cost":4400,
+"description":"hggg vvvvhjj",
+"durationHours":12,
+"name":"aa+",
+"noOfApplicant":33,
+"endDate":"12-8-2018",
+"startDate":"12-7-2018",
+"categoryId":{
+"categoryId":1,
+"name":"it",
+"imageUrl":"https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Ffashion.png?alt=media&token=35240efd-2ea3-44bd-ab3c-3cd9dd1035f5"
+},
+"instructorId":{
+"userId":2
+}
+}
+
+Response :mafesh brg23 status code 200 
+
+

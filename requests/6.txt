@@ -1,0 +1,282 @@
+Instructor can see his created courses through this link:
+url: https://tal-company.herokuapp.com/offeredcourse/offeredcoursebyinstuctor?insructorId=2&page=0
+method : get
+
+response :
+
+[
+    {
+        "offeredCourseId": 12,
+        "cost": 600,
+        "description": "design pattern is very important learn it",
+        "durationHours": 60,
+        "endDate": "2019-10-08",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fprogramming.png?alt=media&token=2ee45036-a5e6-488c-bd76-a4e1d6a20c04",
+        "startDate": "2018-09-08",
+        "name": "Design Pattern",
+        "noOfApplicant": 70,
+        "categoryId": {
+            "categoryId": 2,
+            "name": "Programming",
+            "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fprogramming.png?alt=media&token=2ee45036-a5e6-488c-bd76-a4e1d6a20c04"
+        },
+        "instructorId": {
+            "userId": 2,
+            "totalRate": 2.724853515625,
+            "instructorVideosCollection": [
+                {
+                    "videoId": 1,
+                    "videoUrl": "https://www.youtube.com/watch?v=100rSnubqRs"
+                }
+            ],
+            "skillsCollection": [
+                {
+                    "skillId": 1,
+                    "skillValue": "depeloper"
+                }
+            ],
+            "instructorImagesCollection": [
+                {
+                    "imageUrl": "https://i.ytimg.com/vi/M8wBhKwgrVw/maxresdefault.jpg",
+                    "imgId": 1
+                }
+            ],
+            "instructorUrlsCollection": [
+                {
+                    "urlValue": "https://www.youtube.com/watch?v=US4v8_Mfgyo",
+                    "urlId": 1
+                }
+            ]
+        },
+        "hostingWorkSpaceId": null
+    },
+    {
+        "offeredCourseId": 18,
+        "cost": 600,
+        "description": "Learn marketing",
+        "durationHours": 60,
+        "endDate": "2018-10-25",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fhr.png?alt=media&token=9ccb39e3-59c4-4f5e-96f5-19c129ab37b4",
+        "startDate": "2018-09-08",
+        "name": "Marketing",
+        "noOfApplicant": 70,
+        "categoryId": {
+            "categoryId": 7,
+            "name": "Hr",
+            "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fhr.png?alt=media&token=9ccb39e3-59c4-4f5e-96f5-19c129ab37b4"
+        },
+        "instructorId": {
+            "userId": 2,
+            "totalRate": 2.724853515625,
+            "instructorVideosCollection": [
+                {
+                    "videoId": 1,
+                    "videoUrl": "https://www.youtube.com/watch?v=100rSnubqRs"
+                }
+            ],
+            "skillsCollection": [
+                {
+                    "skillId": 1,
+                    "skillValue": "depeloper"
+                }
+            ],
+            "instructorImagesCollection": [
+                {
+                    "imageUrl": "https://i.ytimg.com/vi/M8wBhKwgrVw/maxresdefault.jpg",
+                    "imgId": 1
+                }
+            ],
+            "instructorUrlsCollection": [
+                {
+                    "urlValue": "https://www.youtube.com/watch?v=US4v8_Mfgyo",
+                    "urlId": 1
+                }
+            ]
+        },
+        "hostingWorkSpaceId": null
+    },
+    {
+        "offeredCourseId": 19,
+        "cost": 600,
+        "description": "Hr skills",
+        "durationHours": 60,
+        "endDate": "2018-10-08",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fhr.png?alt=media&token=9ccb39e3-59c4-4f5e-96f5-19c129ab37b4",
+        "startDate": "2018-09-08",
+        "name": "how to  pass interview",
+        "noOfApplicant": 70,
+        "categoryId": {
+            "categoryId": 7,
+            "name": "Hr",
+            "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fhr.png?alt=media&token=9ccb39e3-59c4-4f5e-96f5-19c129ab37b4"
+        },
+        "instructorId": {
+            "userId": 2,
+            "totalRate": 2.724853515625,
+            "instructorVideosCollection": [
+                {
+                    "videoId": 1,
+                    "videoUrl": "https://www.youtube.com/watch?v=100rSnubqRs"
+                }
+            ],
+            "skillsCollection": [
+                {
+                    "skillId": 1,
+                    "skillValue": "depeloper"
+                }
+            ],
+            "instructorImagesCollection": [
+                {
+                    "imageUrl": "https://i.ytimg.com/vi/M8wBhKwgrVw/maxresdefault.jpg",
+                    "imgId": 1
+                }
+            ],
+            "instructorUrlsCollection": [
+                {
+                    "urlValue": "https://www.youtube.com/watch?v=US4v8_Mfgyo",
+                    "urlId": 1
+                }
+            ]
+        },
+        "hostingWorkSpaceId": null
+    },
+    {
+        "offeredCourseId": 20,
+        "cost": 200,
+        "description": "develope your way of thinking",
+        "durationHours": 200,
+        "endDate": "2018-10-05",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fprogramming.png?alt=media&token=2ee45036-a5e6-488c-bd76-a4e1d6a20c04",
+        "startDate": "2018-10-02",
+        "name": "DataStructure",
+        "noOfApplicant": 100,
+        "categoryId": {
+            "categoryId": 2,
+            "name": "Programming",
+            "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fprogramming.png?alt=media&token=2ee45036-a5e6-488c-bd76-a4e1d6a20c04"
+        },
+        "instructorId": {
+            "userId": 2,
+            "totalRate": 2.724853515625,
+            "instructorVideosCollection": [
+                {
+                    "videoId": 1,
+                    "videoUrl": "https://www.youtube.com/watch?v=100rSnubqRs"
+                }
+            ],
+            "skillsCollection": [
+                {
+                    "skillId": 1,
+                    "skillValue": "depeloper"
+                }
+            ],
+            "instructorImagesCollection": [
+                {
+                    "imageUrl": "https://i.ytimg.com/vi/M8wBhKwgrVw/maxresdefault.jpg",
+                    "imgId": 1
+                }
+            ],
+            "instructorUrlsCollection": [
+                {
+                    "urlValue": "https://www.youtube.com/watch?v=US4v8_Mfgyo",
+                    "urlId": 1
+                }
+            ]
+        },
+        "hostingWorkSpaceId": null
+    },
+    {
+        "offeredCourseId": 21,
+        "cost": 700,
+        "description": "manage your system",
+        "durationHours": 100,
+        "endDate": "2018-11-06",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fprogramming.png?alt=media&token=2ee45036-a5e6-488c-bd76-a4e1d6a20c04",
+        "startDate": "2018-09-25",
+        "name": "System Analysis",
+        "noOfApplicant": 50,
+        "categoryId": {
+            "categoryId": 2,
+            "name": "Programming",
+            "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fprogramming.png?alt=media&token=2ee45036-a5e6-488c-bd76-a4e1d6a20c04"
+        },
+        "instructorId": {
+            "userId": 2,
+            "totalRate": 2.724853515625,
+            "instructorVideosCollection": [
+                {
+                    "videoId": 1,
+                    "videoUrl": "https://www.youtube.com/watch?v=100rSnubqRs"
+                }
+            ],
+            "skillsCollection": [
+                {
+                    "skillId": 1,
+                    "skillValue": "depeloper"
+                }
+            ],
+            "instructorImagesCollection": [
+                {
+                    "imageUrl": "https://i.ytimg.com/vi/M8wBhKwgrVw/maxresdefault.jpg",
+                    "imgId": 1
+                }
+            ],
+            "instructorUrlsCollection": [
+                {
+                    "urlValue": "https://www.youtube.com/watch?v=US4v8_Mfgyo",
+                    "urlId": 1
+                }
+            ]
+        },
+        "hostingWorkSpaceId": null
+    }
+]
+
+
+Get work spaces that requested to host specific course :
+url : https://tal-company.herokuapp.com/offeredcourse/requestedWorkSpaces?courseId=12
+method: get
+
+response : 
+
+[
+    {
+        "workSpaceId": 1,
+        "address": "256 malak hefny street",
+        "city": "Alexandria",
+        "closingTime": "09:00 PM",
+        "description": "Need quite place for studying here is the best place",
+        "email": "abanoubsam481@yahoo.com",
+        "facebookPageUrl": null,
+        "holiday": "Friday",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/springboot-212b1.appspot.com/o/9.jpg?alt=media&token=38e5c046-4d99-428e-80f1-0d2aa6a75b2a",
+        "latitude": null,
+        "longtitude": null,
+        "name": "MySpace",
+        "noOfRooms": 3,
+        "startTime": "10:00 AM",
+        "totalRate": 1.6201171875,
+        "workSpacePhonesCollection": [],
+        "workSpaceImagesCollection": [
+            {
+                "imageUrl": "https://firebasestorage.googleapis.com/v0/b/springboot-212b1.appspot.com/o/4.jpg?alt=media&token=2bdd8e0b-7fe1-4047-990c-885916931498"
+            },
+            {
+                "imageUrl": "https://firebasestorage.googleapis.com/v0/b/springboot-212b1.appspot.com/o/5.jpg?alt=media&token=d2e5c772-845d-45cb-978d-c34684ad884a"
+            },
+            {
+                "imageUrl": "https://firebasestorage.googleapis.com/v0/b/springboot-212b1.appspot.com/o/6.jpg?alt=media&token=a6a64c4e-f7d8-4fec-a471-c4e0ed035f19"
+            }
+        ]
+    }
+]
+
+
+Accept workspace request on course :
+url : https://tal-company.herokuapp.com/offeredcourse/acceptWorkSpaceRequest?courseId=12& workSpaceId=1
+method : post
+
+
+
+
+

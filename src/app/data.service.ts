@@ -14,14 +14,17 @@ export class DataService {
   constructor(private http: HttpClient ) { }
   
 // post with header and data
-  postDataHeader(path: string,data,header): Observable<any> {
+  postDataHeader(path: string,data,header ?): Observable<any> {
     return this.http.post(path,data,header);
-  
+
   }
   getMyData(path: string,header): Observable<any> {
     return this.http.get(path,header);
   }//get upcoming courses
 
+  getdataonly(path: string): Observable<any> {
+    return this.http.get(path);
+ }//json file course
 
 	PostData(WorkSpace:object) {
     return this.http.post('http://172.16.5.177:3000/workspace/add', WorkSpace);

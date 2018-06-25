@@ -1,0 +1,80 @@
+<section>
+  <div class="container">
+   <h1> Create new Course</h1>
+   <form name='newCourse' #newCourse="ngForm"  (ngSubmit)="submitCourse(newCourse)" novalidate>
+  
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Description</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+        type="time" name="description" #description="ngModel" 
+        [(ngModel)]="newCourse.description" required></textarea>
+      <span class="text-danger" 
+      *ngIf="!description.valid && description.touched ">please write description about Course</span>
+    </div>
+  
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Course Cost</label>
+      <input class="form-control" id="exampleFormControlTextarea1" rows="3"
+      type="number" name="cost" #cost="ngModel" [(ngModel)]="newCourse.cost" required/>
+      <span class="text-danger" *ngIf="!cost.valid && cost.touched ">please add course cost</span>
+    </div>
+  
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Course durationHours</label>
+      <input class="form-control" id="exampleFormControlTextarea1" rows="3"
+        type="number" name="durationHours" #durationHours="ngModel" 
+        [(ngModel)]="newCourse.durationHours" required/>
+      <span class="text-danger" *ngIf="!durationHours.valid && durationHours.touched ">please add duration hours</span>
+    </div>
+  
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Course name</label>
+      <input class="form-control" id="exampleFormControlTextarea1" rows="3"
+      type="text" name="name" #name="ngModel" [(ngModel)]="newCourse.name" required/>
+    <span class="text-danger" *ngIf="!name.valid && name.touched ">please add course name</span>
+  
+    </div>
+    
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Number of applicant</label>
+      <input class="form-control" id="exampleFormControlTextarea1" rows="3"
+        type="number" name="noOfApplicant" #noOfApplicant="ngModel" 
+        [(ngModel)]="newCourse.noOfApplicant" required/>
+      <span class="text-danger" *ngIf="!noOfApplicant.valid && noOfApplicant.touched ">please add No of applicants</span>
+    </div>
+  
+    <div class="row">
+     <div class="col-lg-6 col-sm-12">
+      <div class="form-group">
+        <label> Start date</label><br>
+        <input id="meeting" type="date" value="2011-01-13" class="form-control w-50"  
+        name="startDate" #startDate="ngModel" [(ngModel)]="newCourse.startDate" required>
+        <span class="text-danger" *ngIf="!startDate.valid && startDate.touched ">please add start date</span>
+      </div><!-- open time -->
+      </div><!-- end of column -->
+      
+      <div class="col-lg-6 col-sm-12">
+      <div class="form-group">
+        <label>End date</label><br>
+        <input class="form-control w-50" type="date" name="endDate"
+         #endDate="ngModel" [(ngModel)]="newCourse.endDate" required>
+        <span class="text-danger" *ngIf="!endDate.valid && endDate.touched ">please add end date</span>
+  
+      </div><!-- open time -->
+     </div><!-- end of column -->
+    </div><!-- end of row time -->
+    
+      <label for="exampleFormControlSelect1">Categories</label>
+    <select class="form-control w-50" 
+    name="categoryId" [(ngModel)]="categoryId" required #item="ngModel">
+       <option *ngFor="let item of categories" [ngValue]="item">{{item.name}}</option> 
+    </select>
+  <input type="hidden" name="instructorId" 
+  [(ngModel)]="UserId" required #instructorId="ngModel">
+    <button type="submit" class="btn btn-info mt-5 mb-5" >Submit </button>
+    </form>	
+  
+    
+      </div><!-- container -->
+  </section>
+  
