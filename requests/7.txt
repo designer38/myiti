@@ -1,0 +1,190 @@
+Get courses  made by workspaces for instructor to request it 
+
+url : https://tal-company.herokuapp.com/offeredcourse/createdByWorkspaces?instructorId=2&page=0
+
+method:get
+
+response :
+
+{
+    "content": [
+        {
+            "offeredCourseId": 11,
+            "cost": 600,
+            "description": "learn germany",
+            "durationHours": 60,
+            "endDate": "2020-02-08",
+            "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Flang.png?alt=media&token=1b2676c7-99a2-4faa-a6f1-267569c881f2",
+            "startDate": "2018-01-08",
+            "name": "Germany Language",
+            "noOfApplicant": 70,
+            "categoryId": {
+                "categoryId": 9,
+                "name": "Language",
+                "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Flang.png?alt=media&token=1b2676c7-99a2-4faa-a6f1-267569c881f2"
+            },
+            "hostingWorkSpaceId": {
+                "workSpaceId": 2,
+                "address": "43 el m3aref street",
+                "city": "Cairo",
+                "closingTime": "10:00 PM",
+                "description": "The Best Place To Study",
+                "email": "abanoubsamy67@yaahhoo.com",
+                "facebookPageUrl": null,
+                "holiday": "Friday",
+                "imageUrl": "https://firebasestorage.googleapis.com/v0/b/springboot-212b1.appspot.com/o/7.jpg?alt=media&token=cdd84e03-dfd1-4e21-b00b-5bd6d0977a85",
+                "latitude": null,
+                "longtitude": null,
+                "name": "ELmorab3",
+                "noOfRooms": 7,
+                "startTime": "09:00 AM",
+                "totalRate": 3.5,
+                "workSpacePhonesCollection": [],
+                "workSpaceImagesCollection": [
+                    {
+                        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/springboot-212b1.appspot.com/o/7.jpg?alt=media&token=cdd84e03-dfd1-4e21-b00b-5bd6d0977a85"
+                    },
+                    {
+                        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/springboot-212b1.appspot.com/o/8.jpg?alt=media&token=6937ddb6-47c8-40d3-a5f3-d15225f669e4"
+                    },
+                    {
+                        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/springboot-212b1.appspot.com/o/9.jpg?alt=media&token=38e5c046-4d99-428e-80f1-0d2aa6a75b2a"
+                    }
+                ]
+            },
+            "requested": false
+        },
+        {
+            "offeredCourseId": 15,
+            "cost": 600,
+            "description": "Learn Restful services",
+            "durationHours": 60,
+            "endDate": "2019-05-08",
+            "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fprogramming.png?alt=media&token=2ee45036-a5e6-488c-bd76-a4e1d6a20c04",
+            "startDate": "2018-04-08",
+            "name": "Restful WebService",
+            "noOfApplicant": 70,
+            "categoryId": {
+                "categoryId": 2,
+                "name": "Programming",
+                "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fprogramming.png?alt=media&token=2ee45036-a5e6-488c-bd76-a4e1d6a20c04"
+            },
+            "hostingWorkSpaceId": {
+                "workSpaceId": 2,
+                "address": "43 el m3aref street",
+                "city": "Cairo",
+                "closingTime": "10:00 PM",
+                "description": "The Best Place To Study",
+                "email": "abanoubsamy67@yaahhoo.com",
+                "facebookPageUrl": null,
+                "holiday": "Friday",
+                "imageUrl": "https://firebasestorage.googleapis.com/v0/b/springboot-212b1.appspot.com/o/7.jpg?alt=media&token=cdd84e03-dfd1-4e21-b00b-5bd6d0977a85",
+                "latitude": null,
+                "longtitude": null,
+                "name": "ELmorab3",
+                "noOfRooms": 7,
+                "startTime": "09:00 AM",
+                "totalRate": 3.5,
+                "workSpacePhonesCollection": [],
+                "workSpaceImagesCollection": [
+                    {
+                        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/springboot-212b1.appspot.com/o/7.jpg?alt=media&token=cdd84e03-dfd1-4e21-b00b-5bd6d0977a85"
+                    },
+                    {
+                        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/springboot-212b1.appspot.com/o/8.jpg?alt=media&token=6937ddb6-47c8-40d3-a5f3-d15225f669e4"
+                    },
+                    {
+                        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/springboot-212b1.appspot.com/o/9.jpg?alt=media&token=38e5c046-4d99-428e-80f1-0d2aa6a75b2a"
+                    }
+                ]
+            },
+            "requested": false
+        },
+        {
+            "offeredCourseId": 17,
+            "cost": 600,
+            "description": "Learn Painting",
+            "durationHours": 60,
+            "endDate": "2018-10-08",
+            "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fpainting.png?alt=media&token=972d82dd-ed39-4449-9738-01dc4491e02e",
+            "startDate": "2018-09-08",
+            "name": "Painting",
+            "noOfApplicant": 70,
+            "categoryId": {
+                "categoryId": 12,
+                "name": "Painting",
+                "imageUrl": "https://firebasestorage.googleapis.com/v0/b/talentedinc-bba9a.appspot.com/o/categories%2Fpainting.png?alt=media&token=972d82dd-ed39-4449-9738-01dc4491e02e"
+            },
+            "hostingWorkSpaceId": {
+                "workSpaceId": 1,
+                "address": "256 malak hefny street",
+                "city": "Alexandria",
+                "closingTime": "09:00 PM",
+                "description": "Need quite place for studying here is the best place",
+                "email": "abanoubsam481@yahoo.com",
+                "facebookPageUrl": null,
+                "holiday": "Friday",
+                "imageUrl": "https://firebasestorage.googleapis.com/v0/b/springboot-212b1.appspot.com/o/9.jpg?alt=media&token=38e5c046-4d99-428e-80f1-0d2aa6a75b2a",
+                "latitude": null,
+                "longtitude": null,
+                "name": "MySpace",
+                "noOfRooms": 3,
+                "startTime": "10:00 AM",
+                "totalRate": 1.6201171875,
+                "workSpacePhonesCollection": [],
+                "workSpaceImagesCollection": [
+                    {
+                        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/springboot-212b1.appspot.com/o/4.jpg?alt=media&token=2bdd8e0b-7fe1-4047-990c-885916931498"
+                    },
+                    {
+                        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/springboot-212b1.appspot.com/o/5.jpg?alt=media&token=d2e5c772-845d-45cb-978d-c34684ad884a"
+                    },
+                    {
+                        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/springboot-212b1.appspot.com/o/6.jpg?alt=media&token=a6a64c4e-f7d8-4fec-a471-c4e0ed035f19"
+                    }
+                ]
+            },
+            "requested": false
+        }
+    ],
+    "pageNumber": 0,
+    "totalNumberOfPages": 1
+}
+
+
+Instructor can request to teach any course  using this link 
+
+url : https://tal-company.herokuapp.com/InstructorReqOfferedCourse/requestcourse
+
+method post
+request body :
+{
+    “instructorId”:2,
+“courseId”:21
+
+}
+
+
+Cancel request on course :
+
+url : https://tal-company.herokuapp.com/InstructorReqOfferedCourse/cancelCourseRequest
+
+method delete 
+request body :
+{
+    “instructorId”:2,
+“courseId”:21
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

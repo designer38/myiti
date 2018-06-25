@@ -33,11 +33,15 @@ export class InstructorCourseListComponent implements OnInit {
         err => {
           console.log(err);
         }
-      
+        
       )
     }
 
-
+    getCourseId(Id)
+    {
+      localStorage.setItem('courseId',Id)
+      
+    }
 
   ngOnInit() {
   }
