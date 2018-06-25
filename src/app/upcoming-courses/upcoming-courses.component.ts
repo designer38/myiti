@@ -11,21 +11,26 @@ import { HttpHeaders } from '@angular/common/http';
 })
 export class UpcomingCoursesComponent implements OnInit {
   public courses:Array<object>;
-  public token: String;
+  // public token: String;
   constructor(private q: DataService) { 
     this.getCourses();
-    this.token = localStorage.getItem('token');
-    console.log(this.token);
+    
+    // console.log(this.token);
    
   
   }
 
    // function to get courses
-   getCourses(): void {
-    let path: string = 'https://tal-company.herokuapp.com/publishedCourses/upComing?userId=2&page=0';
-    this.q.getMyData(path,
+   getCourses() {
+    let token: string = localStorage.getItem('token');
+    let path: string = 
+    'https://tal-company.herokuapp.com/publishedCourses/upComing?userId=2&page=0'
+    console.log(token)
+    if(token)
+    {
+    return this.q.getMyData(path,
       {
-      headers: new HttpHeaders({ 'Authorization': `Bearer ${this.token}`})
+      headers: new HttpHeaders({ 'Authorization': token})
       })
       .subscribe(
       res => {
@@ -35,8 +40,10 @@ export class UpcomingCoursesComponent implements OnInit {
       err => {
         console.log(err);
       }
+    
     )
   }
+}
 
   
 

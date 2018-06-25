@@ -18,7 +18,9 @@ export class DataService {
     return this.http.post(path,data,header);
   
   }
-  
+  getMyData(path: string,header): Observable<any> {
+    return this.http.get(path,header);
+  }//get upcoming courses
 
 
 	PostData(WorkSpace:object) {
@@ -29,9 +31,7 @@ export class DataService {
      return this.http.put(path,httpOption);
   }//signin
   
-  getMyData(path: string,header): Observable<any> {
-    return this.http.get(path,header);
-  }//get upcoming courses
+ 
 	
 	postAdmin(path:string, data) : Observable<any>{
     return this.http.put(path,data);
