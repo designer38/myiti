@@ -39,6 +39,7 @@ import { CategoryService } from './category.service';
 import { UserloginComponent } from './userlogin/userlogin.component';
 import { CreateCourseByInstrutorComponent } from './create-course-by-instrutor/create-course-by-instrutor.component';
 import { InstructorCourseListComponent } from './instructor-course-list/instructor-course-list.component';
+import { RegisteredCoursesComponent } from './registered-courses/registered-courses.component';
 
 
 
@@ -95,7 +96,8 @@ const routes: Routes = [
 	UpcomingCoursesComponent,
 	UserloginComponent,
 	CreateCourseByInstrutorComponent,
-	InstructorCourseListComponent
+	InstructorCourseListComponent,
+	RegisteredCoursesComponent
 
   ],
   imports: [
