@@ -10,15 +10,12 @@ import {Router} from '@angular/router';
 })
 export class InstructorCourseListComponent implements OnInit {
    coursesList: Array<object> 
-   workspase: Array<object> 
   constructor(
     private q: DataService, 
     private router: Router
   ) {
     this.coursesList =[{}]
-    this.workspase =[{}]
     this.getCourses()
-    this.getWorkspase()
    }
 
 
@@ -41,22 +38,6 @@ export class InstructorCourseListComponent implements OnInit {
     }
 
 
-      // function to get workspase information
-      getWorkspase() {
-        let path: string = 
-        'https://tal-company.herokuapp.com/offeredcourse/requestedWorkSpaces?courseId=12'
-        return this.q.getdataonly(path)
-          .subscribe(
-          res => {
-            this.workspase = res;
-            console.log(this.workspase)
-          },
-          err => {
-            console.log(err);
-          }
-        
-        )
-      }
 
   ngOnInit() {
   }

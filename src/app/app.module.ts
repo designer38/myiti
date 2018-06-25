@@ -40,6 +40,7 @@ import { UserloginComponent } from './userlogin/userlogin.component';
 import { CreateCourseByInstrutorComponent } from './create-course-by-instrutor/create-course-by-instrutor.component';
 import { InstructorCourseListComponent } from './instructor-course-list/instructor-course-list.component';
 import { RegisteredCoursesComponent } from './registered-courses/registered-courses.component';
+import { ReqWorkspacesComponent } from './req-workspaces/req-workspaces.component';
 
 
 
@@ -65,7 +66,8 @@ const routes: Routes = [
 	{ path:'upcomingCourses', component: UpcomingCoursesComponent },
 	{ path:'userLogin', component: UserloginComponent },
 	{ path:'createCourseByInstructor', component: CreateCourseByInstrutorComponent},
-	{ path:'myCoursesList', component: InstructorCourseListComponent}
+	{ path:'myCoursesList', component: InstructorCourseListComponent},
+	{ path:'reqWorkspaces', component: ReqWorkspacesComponent}
 	
 ]
 
@@ -97,7 +99,8 @@ const routes: Routes = [
 	UserloginComponent,
 	CreateCourseByInstrutorComponent,
 	InstructorCourseListComponent,
-	RegisteredCoursesComponent
+	RegisteredCoursesComponent,
+	ReqWorkspacesComponent
 
   ],
   imports: [
