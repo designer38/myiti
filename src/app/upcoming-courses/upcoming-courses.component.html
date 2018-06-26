@@ -18,9 +18,13 @@
         <p class="text-danger">{{course.startDate}}</p>
          </div>
          <div class="row central3">
-              <i class="fas fa-thumbs-up"></i>
-        <p>{{course.numberOfLikes}}</p> &nbsp;  <i class="fas fa-comments"></i> <p>{{course.numberOfComments}}</p>
+             <i class="fas fa-thumbs-up"  (click)="likeCourse(course.offeredCourseId,course.publishedDate)"></i>
+        <p>{{course.numberOfLikes}}</p> &nbsp; <i class="fas fa-comments" ></i> <p>{{course.numberOfComments}}</p>
          </div>
+
+         <button *ngIf="course.registered==false" (click)="register(course.offeredCourseId,course.publishedDate)">Register</button>
+         <button   *ngIf="course.registered==true" (click)="unRegister(course.offeredCourseId,course.publishedDate)">Unregister</button>
+    
         </div>
     </div>
     </div>

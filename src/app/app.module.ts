@@ -41,6 +41,7 @@ import { CreateCourseByInstrutorComponent } from './create-course-by-instrutor/c
 import { InstructorCourseListComponent } from './instructor-course-list/instructor-course-list.component';
 import { RegisteredCoursesComponent } from './registered-courses/registered-courses.component';
 import { ReqWorkspacesComponent } from './req-workspaces/req-workspaces.component';
+import { SingleCourseComponent } from './single-course/single-course.component';
 
 
 
@@ -69,6 +70,8 @@ const routes: Routes = [
 	{ path:'myCoursesList', component: InstructorCourseListComponent},
 	{ path:'reqWorkspaces', component: ReqWorkspacesComponent},
 	{ path:'registeredCourses', component:  RegisteredCoursesComponent},
+	{ path:'singleCourse', component:   SingleCourseComponent}
+
 
 
 	
@@ -103,7 +106,8 @@ const routes: Routes = [
 	CreateCourseByInstrutorComponent,
 	InstructorCourseListComponent,
 	RegisteredCoursesComponent,
-	ReqWorkspacesComponent
+	ReqWorkspacesComponent,
+	SingleCourseComponent
 
   ],
   imports: [
