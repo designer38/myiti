@@ -1,5 +1,5 @@
 nav{
-    background-color:rgba(255, 205, 0, .7);
+    background-color:white;
     .fory {
         transform-style: preserve-3d;
         transform:rotate(15deg);
@@ -10,10 +10,13 @@ nav{
    }
    .fory a {
        border:5px solid;
-    border-color:white;
+    border-color:#FFCD00;
        background-color: #439FDE;
+       box-shadow: 4px 4px 10px rgba(0,0,0,0.5) ;
+
 margin-left: 10px;
        width:100px;
+       
    }
    .fory:after{
        content: '';
