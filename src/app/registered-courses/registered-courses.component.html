@@ -1,3 +1,36 @@
-<p>
-  registered-courses works!
-</p>
+<section>
+  <div class="container">
+    <h1>My Courses</h1>
+    <div class="row  pt-5 justify-content-center" >
+        <div class="card-deck" *ngFor="let course of courses" >
+          <div class="card p-4 m-4">
+            <img class="card-img-top" style="max-width: 16rem" class="img-fluid" src="{{course.imageUrl}}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{course.name}}</h5>
+                <p class="card-text"> by {{course.nameOfInstructor}}</p>
+                <p class="card-text">Start date: {{course.startDate}}</p>
+                <small> </small>
+                <div *ngIf=" course.courseStatus==2&&course.registered&&course.rated==false">
+                 <p>Course rate : <ngb-rating [(rate)]="courserate" [readonly]="rated"></ngb-rating>
+                 </p>
+
+                 <p>Workspace rate : <ngb-rating [(rate)]="workspacerate" [readonly]="rated"></ngb-rating>
+                 </p>
+
+                 <p>Instructor rate : <ngb-rating [(rate)]="instructorrate" [readonly]="rated"></ngb-rating>
+                 </p>
+               
+
+
+                 <br><button (click)="addRate(course.offeredCourseId,course.publishedDate)" >Send feedback</button>
+
+                </div>
+             
+           </div>
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+</section>

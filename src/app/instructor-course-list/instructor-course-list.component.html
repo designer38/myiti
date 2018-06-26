@@ -6,9 +6,9 @@
         <div class="card-body">
           <h5 class="card-title">{{course.name}}</h5>
           <p class="card-text">{{course.description}}</p>
-          <p class="card-text text-primary">cost: {{course.cost}}</p>
-          <p class="card-text text-danger">duration: {{course.durationHours}}</p>
-          <a routerLink="/reqWorkspaces" class="btn btn-primary">show requests</a>
+          <p class="card-text">cost: {{course.cost}}</p>
+          <p class="card-text">duration: {{course.durationHours}}</p>
+          <a routerLink="/reqWorkspaces" (click)="getCourseId(course.offeredCourseId)"class="btn btn-primary">show requests</a>
         </div>
       </div>
     </div>

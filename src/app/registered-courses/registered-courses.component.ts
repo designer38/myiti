@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { HttpHeaders } from '@angular/common/http';
 import { element } from 'protractor';
+import {NgbRatingConfig} from '@ng-bootstrap/ng-bootstrap';
+import { config } from 'rxjs/internal/config';
+import { triggerAsyncId } from 'async_hooks';
+
 
 @Component({
   selector: 'app-registered-courses',
@@ -11,18 +15,37 @@ import { element } from 'protractor';
 export class RegisteredCoursesComponent implements OnInit {
   public courses:Array<object>;
   public userRating:object;
-
-  constructor(private q: DataService) {
+  public userid;
+  public courserate:number ;
+  public workspacerate:number;
+  public instructorrate:number;
+  public rated:boolean;
+  constructor(private q: DataService,config: NgbRatingConfig) {
+    config.max=5;
     this.getCourses();
+    this.rated=false;
+    this.userid=localStorage.getItem("userId");
+    
     this.userRating={
       "userId":"",
       "courseId":"",
       "courseDate":"",
-      "courseRate":"",
-      "instructorRate":"",
-      "workSpaceRate":""
+      "courseRate":0,
+      "instructorRate":0,
+      "workSpaceRate":0
     }
 
+   }
+   addRate(courseId,courseDate){
+     this.userRating['userId']=JSON.parse(this.userid);
+     this.userRating['courseId']=courseId;
+     this.userRating['courseDate']=courseDate;
+     this.userRating['courseRate']= this.courserate;
+     this.userRating['instructorRate']=this.instructorrate;
+     this.userRating['workSpaceRate']=this.workspacerate;
+     this.rated=true;  
+     console.log(this.userRating)
+     this.sendRating();
    }
 
 
@@ -30,7 +53,7 @@ export class RegisteredCoursesComponent implements OnInit {
     getCourses() {
       let token: string = localStorage.getItem('token');
       let path: string = 
-      'https://tal-company.herokuapp.com/publishedCourses/upComing?userId=2&page=0'
+      'https://tal-company.herokuapp.com/publishedCourses/upComing?userId=46&page=0'
       console.log(token)
       if(token)
       {

@@ -10,7 +10,8 @@ export class TransferService {
     private cartIndex:Array<any>;
 
 	// private urlHistory: string;
-	
+    private myObj: Array<object>;
+
   constructor() {
       this.urlHistory = [];
   }
@@ -44,5 +45,13 @@ export class TransferService {
     public params(): Array<any> {
         return this.cartIndex;
         }
+
+
+        public setData(val : Array<object>): void {
+            this.myObj = val;
+          }
+          public getData() {
+            return this.myObj
+          }
 	
 }
