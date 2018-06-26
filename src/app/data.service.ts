@@ -24,12 +24,14 @@ export class DataService {
   }//get upcoming courses
 
   //delete 
-  deleteData(path:string,data,){
+  deleteData(path:string,data){
     return this.http.delete(path,data);
   }
 
 
-
+  delete(path: string): Observable<any> {
+    return this.http.delete(path);
+  }
 
   getdataonly(path: string): Observable<any> {
     return this.http.get(path);

@@ -71,22 +71,6 @@ export class CoursesByWorkspacesComponent implements OnInit {
   {
     // console.log(cid)
     let iid = localStorage.setItem('courseId',cid)
-    // let path: string = 
-    // 'https://tal-company.herokuapp.com/InstructorReqOfferedCourse/requestcourse'
-    // return this.q.postDataHeader(path,{
-    //   "instructorId": JSON.parse(iid),
-    //   "courseId":JSON.parse(cid)  
-    // })
-    //   .subscribe(
-    //   res => {
-    //     console.log(res)
-    //   },
-    //   err => {
-    //     console.log(err);
-    //   }
-    
-    // )
-
 
   }
   ngOnInit() {

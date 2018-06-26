@@ -3,10 +3,10 @@
 
  <section class="genbg mt-4">
      <div class="container">
-     <h1 class="">Workspace Login</h1>
+     <h1 class="">Login</h1>
      <form name="SignIn" #SignIn="ngForm" (ngSubmit)="getworkspace(SignIn)" novalidate>
        <div class="form-group">
-         <label>Workspace email</label>
+         <label>email</label>
          <input type="email" class="form-control" 
          placeholder="Enter name"  
          name="email" #email="ngModel" [(ngModel)]="userLogin.email" required>
@@ -14,7 +14,7 @@
          </div><!-- Workspace name -->
          
          <div class="form-group">
-         <label>Workspace password</label>
+         <label>password</label>
          <input type="password" class="form-control" 
          placeholder="Enter Password" name="password" #password="ngModel" 
          [(ngModel)]="userLogin.password" required>
