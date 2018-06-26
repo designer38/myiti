@@ -1,3 +1,15 @@
-<p>
-  req-workspaces works!
-</p>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-4" *ngFor="let workspase of workspases">
+      <div class="card mb-2 text-center">
+        <img class="card-img-top m-auto p-2" src="{{workspase.imageUrl}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{workspase.name}}</h5>
+          <p class="card-text">{{workspase.description}}</p>
+          <p class="card-text">holidaies: {{workspase.holiday}}</p>
+          <a routerLink="/reqWorkspaces" (click)="accept(workspase.workSpaceId)"class="btn btn-primary">Accept</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -9,24 +9,25 @@ import {Router} from '@angular/router';
   styleUrls: ['./req-workspaces.component.scss']
 })
 export class ReqWorkspacesComponent implements OnInit {
-  workspase: Array<object> 
+  workspases: Array<object> 
   constructor(
     private q: DataService, 
     private router: Router
   ) { 
-    this.workspase =[{}]
+    this.workspases =[{}]
     this.getWorkspase()
   }
 
         // function to get workspase information
         getWorkspase() {
+          let courseId = localStorage.getItem('courseId')
           let path: string = 
-          'https://tal-company.herokuapp.com/offeredcourse/requestedWorkSpaces?courseId=12'
+          `https://tal-company.herokuapp.com/offeredcourse/requestedWorkSpaces?courseId=${courseId}`
           return this.q.getdataonly(path)
             .subscribe(
             res => {
-              this.workspase = res;
-              console.log(this.workspase)
+              this.workspases = res;
+              console.log(this.workspases)
             },
             err => {
               console.log(err);
@@ -35,6 +36,27 @@ export class ReqWorkspacesComponent implements OnInit {
           )
         }
   
+        accept(Id)
+        {
+          let courseId = localStorage.getItem('courseId')
+          let path: string = 
+          'https://tal-company.herokuapp.com/offeredcourse/acceptWorkSpaceRequest'
+          return this.q.postDataHeader(path,{
+            "workSpaceId": JSON.parse(Id),
+            "courseId":JSON.parse(courseId)  
+          })
+            .subscribe(
+            res => {
+              console.log(res)
+            },
+            err => {
+              console.log(err);
+            }
+          
+          )
+
+
+        }
   ngOnInit() {
   }
 

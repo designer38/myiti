@@ -1,3 +1,27 @@
-<p>
-  single-course works!
-</p>
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+
+
+          <div class="card mb-2 text-center border-0">
+              <img class="card-img-top m-auto p-2 " src="{{course.imageUrl}}" alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">{{course.name}}</h5>
+           
+                <p class="text-primary">  <span class="text-dark"> By:</span>{{course.nameOfInstructor}}</p>
+                <p class="text-danger"><span class="text-dark"> Start date:</span>{{course.startDate}}</p>
+                <i class="fas fa-thumbs-up"  (click)="likeCourse(course.offeredCourseId,course.publishedDate)"></i>
+                <span>{{course.numberOfLikes}}</span> &nbsp; <i class="fas fa-comments" ></i> <span>{{course.numberOfComments}}</span><br><br>
+            
+                 <button *ngIf="course.registered==false" (click)="register(course.offeredCourseId,course.publishedDate)">Register</button>
+                 <button  *ngIf="course.registered==true" (click)="unRegister(course.offeredCourseId,course.publishedDate)">Unregister</button>
+                 <br>
+                 <h2>Comments</h2>
+                 
+                </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>

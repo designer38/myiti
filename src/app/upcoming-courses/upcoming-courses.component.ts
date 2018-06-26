@@ -172,7 +172,13 @@ register(id,date){
   }
   this.getCourses();
  }
+ details(c:object)
+ {
+ let stringobj= JSON.stringify(c)
+ let iid= localStorage.setItem('userCourse',stringobj)
 
+  
+ }
 
   ngOnInit() {
   }
