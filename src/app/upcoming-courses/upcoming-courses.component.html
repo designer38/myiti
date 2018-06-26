@@ -3,6 +3,7 @@
 
 
 <div class="container">
+        <a routerLink="/registeredCourses"class="btn btn-primary">My courses</a>
     <div class="row mt-5">
         <div class="col-md-4" *ngFor="let course of courses">
     <div class="card mb-2 text-center">
@@ -18,9 +19,14 @@
         <p class="text-danger">{{course.startDate}}</p>
          </div>
          <div class="row central3">
-              <i class="fas fa-thumbs-up"></i>
-        <p>{{course.numberOfLikes}}</p> &nbsp;  <i class="fas fa-comments"></i> <p>{{course.numberOfComments}}</p>
+             <i class="fas fa-thumbs-up"  (click)="likeCourse(course.offeredCourseId,course.publishedDate)"></i>
+        <p>{{course.numberOfLikes}}</p> &nbsp; <i class="fas fa-comments" ></i> <p>{{course.numberOfComments}}</p>
          </div>
+
+         <button *ngIf="course.registered==false" (click)="register(course.offeredCourseId,course.publishedDate)">Register</button>
+         <button   *ngIf="course.registered==true" (click)="unRegister(course.offeredCourseId,course.publishedDate)">Unregister</button>
+     <br><br>    <a routerLink="/singleCourse" (click)="details(course)"class="btn btn-primary">details</a>
+
         </div>
     </div>
     </div>

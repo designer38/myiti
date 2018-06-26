@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { retry } from 'rxjs/internal/operators/retry';
 
  let httpOption = {
   headers: new HttpHeaders({'Content-Type':'application/json'})
@@ -21,6 +22,12 @@ export class DataService {
   getMyData(path: string,header): Observable<any> {
     return this.http.get(path,header);
   }//get upcoming courses
+
+  //delete 
+  deleteData(path:string,data){
+    return this.http.delete(path,data);
+  }
+
 
   delete(path: string): Observable<any> {
     return this.http.delete(path);

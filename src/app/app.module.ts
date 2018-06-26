@@ -41,6 +41,7 @@ import { CreateCourseByInstrutorComponent } from './create-course-by-instrutor/c
 import { InstructorCourseListComponent } from './instructor-course-list/instructor-course-list.component';
 import { RegisteredCoursesComponent } from './registered-courses/registered-courses.component';
 import { ReqWorkspacesComponent } from './req-workspaces/req-workspaces.component';
+import { SingleCourseComponent } from './single-course/single-course.component';
 import { CoursesByWorkspacesComponent } from './courses-by-workspaces/courses-by-workspaces.component';
 import { CourseDetailasComponent } from './course-detailas/course-detailas.component';
 
@@ -70,6 +71,8 @@ const routes: Routes = [
 	{ path:'createCourseByInstructor', component: CreateCourseByInstrutorComponent},
 	{ path:'myCoursesList', component: InstructorCourseListComponent},
 	{ path:'reqWorkspaces', component: ReqWorkspacesComponent},
+	{ path:'registeredCourses', component:  RegisteredCoursesComponent},
+	{ path:'singleCourse', component:   SingleCourseComponent},
 	{ path:'CoursesByWorkspaces', component: CoursesByWorkspacesComponent},
 	{ path:'CourseDetailas', component: CourseDetailasComponent}
 
@@ -106,6 +109,7 @@ const routes: Routes = [
 	InstructorCourseListComponent,
 	RegisteredCoursesComponent,
 	ReqWorkspacesComponent,
+	SingleCourseComponent,
 	CoursesByWorkspacesComponent,
 	CourseDetailasComponent
 
@@ -118,7 +122,9 @@ const routes: Routes = [
 	FormsModule,
 	NgbModule.forRoot(),
 	ImageUploadModule.forRoot(),
-	AngularWebStorageModule
+	AngularWebStorageModule,
+	
+
   ],
   providers: [DataService, TransferService, CategoryService],
   bootstrap: [AppComponent]
