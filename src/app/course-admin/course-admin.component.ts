@@ -37,7 +37,7 @@ export class CourseAdminComponent implements OnInit {
         //  if(hostingWorkSpaceId == )
             this.crsjson = res;
           //  console.log(hostingWorkSpaceId)
-           console.log( this.crsjson);
+           console.log(res.hostingWorkSpaceId);
            res.foreach(function (value){console.log(value)})
               },
        err => {

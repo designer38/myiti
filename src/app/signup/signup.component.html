@@ -53,11 +53,11 @@
 	 </div><!-- end of column -->
 	</div><!-- end of row time -->
 	
-   <!-- <div class="form-group">
+   <div class="form-group">
     <label for="exampleFormControlFile1">Add picture for workspace</label>
     <input type="file" class="form-control-file" id="exampleFormControlFile1" name="fileupload" #fileupload="ngModel" [(ngModel)]="WorkSpace.fileupload">
     <span class="text-danger" *ngIf="!fileupload.valid && fileupload.touched ">please upload image</span>
-	</div>add picture for workspace -->
+	</div><!-- add picture for workspace -->
   
   <div class="form-group">
    <label>Holidays</label><br>
@@ -66,37 +66,37 @@
 		  <label class="form-check-label" for="inlineCheckbox1">Saturday</label>
 	  </div>
 	  <div class="form-check form-check-inline">
-		  <input class="form-check-input" type="checkbox" value="Sunday" name="holiday1" #holiday1="ngModel" [(ngModel)]="WorkSpace.holiday1">
+		  <input class="form-check-input" type="checkbox" value="Sunday" name="holiday" #holiday="ngModel" [(ngModel)]="WorkSpace.holiday">
 		  <label class="form-check-label" for="inlineCheckbox2">Sunday</label>
 	  </div>
 	  <div class="form-check form-check-inline">
-		  <input class="form-check-input" type="checkbox" value="Monday" name="holiday2" #holiday2="ngModel" [(ngModel)]="WorkSpace.holiday2">
+		  <input class="form-check-input" type="checkbox" value="Monday" name="holiday" #holiday="ngModel" [(ngModel)]="WorkSpace.holiday">
 		  <label class="form-check-label" for="inlineCheckbox2">Monday</label>
 	  </div>
 	  <div class="form-check form-check-inline">
-		  <input class="form-check-input" type="checkbox" value="tuesday" name="holiday3" #holiday3="ngModel" [(ngModel)]="WorkSpace.holiday3">
+		  <input class="form-check-input" type="checkbox" value="tuesday" name="holiday" #holiday="ngModel" [(ngModel)]="WorkSpace.holiday">
 		  <label class="form-check-label" for="inlineCheckbox2">Tuesday</label>
 	  </div>
 	  <div class="form-check form-check-inline">
-		  <input class="form-check-input" type="checkbox" value="Wedneasday" name="holiday4" #holiday4="ngModel" [(ngModel)]="WorkSpace.holiday5">
+		  <input class="form-check-input" type="checkbox" value="Wedneasday" name="holiday" #holiday="ngModel" [(ngModel)]="WorkSpace.holiday">
 		  <label class="form-check-label" for="inlineCheckbox2">Wedneasday</label>
 	  </div>
 	  <div class="form-check form-check-inline">
-		  <input class="form-check-input" type="checkbox" value="Thursday" name="holiday5" #holiday5="ngModel" [(ngModel)]="WorkSpace.holiday5">
+		  <input class="form-check-input" type="checkbox" value="Thursday" name="holiday" #holiday="ngModel" [(ngModel)]="WorkSpace.holiday">
 		  <label class="form-check-label" for="inlineCheckbox2">Thursday</label>
 	  </div>
 	  <div class="form-check form-check-inline">
-		  <input class="form-check-input" type="checkbox" value="Friday" name="holiday6" #holiday6="ngModel" [(ngModel)]="WorkSpace.holiday6">
+		  <input class="form-check-input" type="checkbox" value="Friday" name="holiday" #holiday="ngModel" [(ngModel)]="WorkSpace.holiday">
 		  <label class="form-check-label" for="inlineCheckbox2">Friday</label>
 	 </div>
 	 </div> <!-- weekend holidays -->
 	 
-  <!-- <div class="form-group">
+  <div class="form-group">
 	<label>Telephone</label>
 	<input class="form-control" type="number" name="workSpacePhonesCollection" 
 	#workSpacePhonesCollection="ngModel" [(ngModel)]="WorkSpace.workSpacePhonesCollection" required> 
 	<span class="text-danger" *ngIf="!workSpacePhonesCollection.valid && workSpacePhonesCollection.touched ">please add phone number</span>
-  </div>telephone -->
+  </div><!-- telephone -->
   
     <div class="form-group" >
 	   <label>How many Rooms in Workspace</label>
@@ -123,6 +123,6 @@
 	<span class="text-danger" *ngIf="!city.valid && city.touched ">please add phone number</span>
 	
 	</form>	
-		<a type="button" class="btn btn-lg final mt-5 mb-5" (click)="onSave($event)" routerLink="/SignIn">Submit</a>
+		<a type="button" class="btn btn-lg final mt-5 mb-5" (click)="onSave($event)" routerLink="/profile">Submit</a>
 		</div><!-- container -->
 </section>

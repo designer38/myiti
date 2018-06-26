@@ -71,7 +71,7 @@ ngOnInit() {
 		this.dx=dx;
 		this.dy=dy;
 		this.radius=radius;
-		this.colors=['#FFCD00','#3F708D','#439FDE'];
+		this.colors=['#FFCD00','#3F708D','#439FDE','#F88756'];
 		this.color=colors[Math.floor(Math.random() * colors.length)];
 		this.draw=function(){
 		  c.beginPath();
@@ -105,10 +105,10 @@ ngOnInit() {
 	  for(var i=0;i<100;i++){
 		var x= Math.random()*(innerWidth-(radius*2))+radius;
 		var y= Math.random()*(innerHeight-(radius*2))+radius;
-		var dx=(Math.random()-0.2)*4;
-		var dy=(Math.random()-0.2)*4;
+		var dx=(Math.random()-0.2)*10;
+		var dy=(Math.random()-0.2)*10;
 		var radius=30;
-		var colors=['#FFCD00','#3F708D','#439FDE'];
+		var colors=['#FFCD00','#3F708D','#439FDE','#F88756'];
 		var color=colors[Math.floor(Math.random() * colors.length)];
 		circleArray.push(new circle(x,y,dx,dy,radius,color));
 

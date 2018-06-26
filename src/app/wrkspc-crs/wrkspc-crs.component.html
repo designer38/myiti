@@ -3,26 +3,12 @@
 		<!-- <a  class="btn btn-info" routerLink="/ShwReq">show Requests</a> -->
    <div class="col-sm-12 offset-lg-9">
 <!-- 	<a  class="btn btn-info" routerLink="/instructor">Back to Instructors</a>-->
-	  </div><!-- column -->
-	  
-
+ 	 </div><!-- column -->
  	</div><!-- container -->
  </div><!-- row button instruct rout -->
 
-
  <div class="container">
-
-
-		<div class="row h-100">
-				<div class="col-lg-6 mt-5">
-					<a class="btn btn-lg final ml-3 w-25"  routerLink="/instructor">Instructor</a>
-					<a class="btn btn-lg final ml-3 w-25"  routerLink="/WrkspcCrs">My requests</a>
-					<a class="btn btn-lg final ml-3 w-25" routerLink="/FormCourse">Add courses</a>
-				</div><!-- column -->
-			</div><!-- row -->
-
-
- <div class="row mt-5 table-bordered table-dark" >
+ <div class="row mt-5" >
   <div class="col-lg-4 col-sm-12 mb-5" *ngFor="let item of selectedData">
   	<div class="card card-height" style="width: 18rem;" >
      <img class="card-img-top" src="{{item.imgUrl}}" alt="Card image cap">

@@ -1,24 +1,15 @@
 <div class="container">
-
-
-		<div class="row">
-				<div class="col-lg-6 mt-2">
-					<a class="btn btn-lg final ml-3 w-25"  routerLink="/instructor">Instructor</a>
-					<a class="btn btn-lg final ml-3 w-25"  routerLink="/WrkspcCrs">My requests</a>
-					<a class="btn btn-lg final ml-3 w-25" routerLink="/FormCourse">Add courses</a>
-				</div><!-- column -->
-			</div><!-- row -->
-	<div class="row mt-5 m-0 table-bordered table-dark" >
+	<div class="row mt-5 m-0" >
 		<div class="col-lg-4 mb-5" *ngFor="let instruct of instjson">
 			  <div class="card" style="width: 18rem;">
 			  <img class="card-img-top" src="{{instruct.imgUrl}}" alt="Card image cap">
 			   <div class="card-body">
 				<h5 class="card-title ">Name:{{instruct.Name}}</h5>
-				<p><b class="main">firstName:</b> {{instruct.firstName}}</p>
-				<p><b class="main">lastName: </b> {{instruct.lastName}}</p>
-				<p><b class="main">userDob: </b>{{instruct.userDob}}</p>
-				<p><b class="main">email: </b>{{instruct.email}}</p>
-				<p><b class="main">gender:</b> {{instruct.gender}}</p>
+				<p><b>firstName:</b> {{instruct.firstName}}</p>
+				<p><b>lastName: </b> {{instruct.lastName}}</p>
+				<p><b>userDob: </b>{{instruct.userDob}}</p>
+				<p><b>email: </b>{{instruct.email}}</p>
+				<p><b>gender:</b> {{instruct.gender}}</p>
 				<a class="card-text btn btn-primary" (click)="onload(instruct.userId)">See Courses</a>
 			  </div><!-- card-body -->
 			</div><!-- card -->

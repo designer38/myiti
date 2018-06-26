@@ -15,7 +15,7 @@ export class ShwReqComponent implements OnInit {
   instructorAdmin;
   id=this.trans.getCart();
   request(){
-    let path:string='http://172.16.5.177:3000/workspace/requestedInstructors?courseId='+this.id;
+    let path:string='http://172.16.5.184:3000/workspace/requestedInstructors?courseId='+this.id;
      this.Data.shwQrs(path).subscribe(
        Data =>{
          this.instructorAdmin= Data

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { CategoryService } from '../category.service';
 import { Category } from '../category';
-import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-form-course',
@@ -24,18 +23,14 @@ export class FormCourseComponent implements OnInit {
 
 		"hostingWorkSpaceId":{"workSpaceId":1}
 
-					 };
-					 categories: Array<Category> = []
-				id: any;
+         	};
+	
   constructor(private Data:DataService,
-							private CategoryService:CategoryService,
-							private router: Router) {
-								this.id = localStorage.getItem('workSpaceId');
+              private CategoryService:CategoryService) {
 
 							}
-
+			  categories: Array<Category> = []
 			  
-
 	 postCourse(data){
 		 console.log(data) 
 		 let offeredCourse = {
@@ -51,7 +46,7 @@ export class FormCourseComponent implements OnInit {
 			},
 			"noOfApplicant":data.noOfApplicant,
 	
-			"hostingWorkSpaceId":{"workSpaceId":this.id}
+			"hostingWorkSpaceId":{"workSpaceId":1}
 	
 						 };
 
@@ -59,16 +54,9 @@ export class FormCourseComponent implements OnInit {
 
 
 		 this.Data.formCrs(offeredCourse).subscribe(
-			 (response) => {
-				 console.log(response)
-				},
+			 (response) => {console.log(response)},
 			 (error) => {console.log(error)}
-
-	)
-	this.router.navigate(['/WrkspcCrs'])
-
-
-}//post the data 
+	)}//post the data 
 	
   ngOnInit() {
 	this.CategoryService.GetCategories().subscribe((cats: Array<Category>) => {

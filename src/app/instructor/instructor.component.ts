@@ -27,7 +27,7 @@ instjson:Array<object>;
   }
 	
 	instructordata() {
-    let path: string='http://172.16.5.177:3000/workspace/instructors';
+    let path: string='http://172.16.5.184:3000/workspace/instructors';
     this.Data.instructorJson(path).subscribe(
        res => {
             this.instjson = res;

@@ -1,27 +1,27 @@
 <div class="container">
-    <div class="d-flex justify-content-center mt-3">
-           
-             <a class="nav-item nav-link btn btn-lg final" routerLink="/CourseAdmin">Courses</a>
-             <a class="nav-item nav-link btn btn-lg final" routerLink="/AdminInstructor">instructor</a>
-             <a class="nav-item nav-link btn btn-lg final" routerLink="/WrkspaceAdmin">workspace</a>
-           
+    <div class="row">
+           <div class="navbar-nav">
+             <a class="nav-item nav-link" routerLink="/CourseAdmin">Courses</a>
+             <a class="nav-item nav-link" routerLink="/AdminInstructor">instructor</a>
+             <a class="nav-item nav-link" routerLink="/WrkspaceAdmin">workspace</a>
+           </div>
      </div><!-- link rows -->
-   <div class="row mb-5 mt-3 table-bordered table-white"  *ngFor="let workspace of wrkspaceAdmin">
+   <div class="row mb-5 mt-3"  *ngFor="let workspace of wrkspaceAdmin">
        <div class="col-lg-4 col-sm-12" >
            <p class="mt-0"><b>workSpaceId:</b> {{workspace.workSpaceId}}</p>
            <img src="{{workspace.imageUrl}}">
-           <p><b class="main">city: </b>{{workspace.city}}</p>
-           <p><b class="main">address: </b>{{workspace.address}}</p>
-           <p><b class="main">name:</b> {{workspace.name}}</p>
-           <p><b class="main">startTime:</b> {{workspace.startTime}}</p>
-           <p><b class="main">closingTime:</b> {{workspace.closingTime}}</p>
+           <p><b>city: </b>{{workspace.city}}</p>
+           <p><b>address: </b>{{workspace.address}}</p>
+           <p><b>name:</b> {{workspace.name}}</p>
+           <p><b>startTime:</b> {{workspace.startTime}}</p>
+           <p><b>closingTime:</b> {{workspace.closingTime}}</p>
            
            </div>
            <div class="col-lg-4">
-              <p><b class="main">holiday:</b> {{workspace.holiday}}</p>
-              <p><b class="main">description:</b> {{workspace.description}}</p>
-              <p><b class="main">noOfRooms:</b> {{workspace.noOfRooms}}</p>
-              <p><b class="main">facebookPageUrl:</b> {{workspace.facebookPageUrl}}</p>
+              <p><b>holiday:</b> {{workspace.holiday}}</p>
+              <p><b>description:</b> {{workspace.description}}</p>
+              <p><b>noOfRooms:</b> {{workspace.noOfRooms}}</p>
+              <p><b>facebookPageUrl:</b> {{workspace.facebookPageUrl}}</p>
         <!-- <div *ngFor="let wrkspacePhone of workspace.workSpacePhonesCollection">
             <p><b>workSpaceId:</b>{{wrkspacePhone.workSpacePhonesPK.workSpaceId}}</p>
             <p><b>phone: </b>{{wrkspacePhone.workSpacePhonesPK.phone}}</p>
