@@ -5,7 +5,13 @@
         <div class="card-body">
           <h5 class="card-title">{{course.name}}</h5>
           <p class="card-text">{{course.description}}</p>
-          <a routerLink="/CourseDetailas" (click)="details(course.offeredCourseId)"class="btn btn-primary">details</a>
+          <div *ngIf="course.requested">
+
+            <a routerLink="/CourseDetailas" (click)="cancel(course.offeredCourseId)"class="btn btn-primary">Cancel</a>
+          </div>
+          <div *ngIf="!course.requested">
+          <a routerLink="/CourseDetailas" (click)="request(course.offeredCourseId)"class="btn btn-primary">Request</a>
+        </div>
         </div>
     </div> 
   </div>

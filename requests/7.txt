@@ -1,4 +1,4 @@
-Get courses  made by workspaces for instructor to request it 
+Get courses  made by workspaces for instructor to request it  
 
 url : https://tal-company.herokuapp.com/offeredcourse/createdByWorkspaces?instructorId=2&page=0
 
@@ -160,7 +160,7 @@ method post
 request body :
 {
     “instructorId”:2,
-“courseId”:21
+    “courseId”:21
 
 }
 

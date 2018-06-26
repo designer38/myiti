@@ -22,6 +22,10 @@ export class DataService {
     return this.http.get(path,header);
   }//get upcoming courses
 
+  delete(path: string): Observable<any> {
+    return this.http.delete(path);
+  }
+
   getdataonly(path: string): Observable<any> {
     return this.http.get(path);
  }//json file course

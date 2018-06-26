@@ -1,7 +1,7 @@
 User can view upcoming courses (mmkn t3mloha zy grid view 2w 2y 7aga zy el mwake3 bta3yt el coursat )
 W tbyno byanat mo3ya z esm el course w hybd2 emta w esm el instructor w 3dd el likes  w hkza wlma el user ydos 3lyh yft7 kol details el course w y2dr y3ml like 2w comment w y3ml register fyh 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  El request : https://tal-company.herokuapp.com/publishedCourses/upComing?userId=2&page=0
+El request : https://tal-company.herokuapp.com/publishedCourses/upComing?userId=2&page=0
 Method :get
 Mtnsosh tb3to el token 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
